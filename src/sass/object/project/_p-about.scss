@@ -1,0 +1,35 @@
+@use 'global' as *;
+
+.p-about {
+
+}
+
+.p-about__inner {
+
+}
+
+.p-about__title {
+    max-width: rem(272);
+    margin: 0 auto;
+}
+
+.p-about__img {
+    width: 100%;
+    margin-top: rem(50);
+}
+
+.p-about__subtitle {
+    margin-top: rem(25);
+}
+
+.p-about__text {
+    font-size: rem(12);
+    line-height: calc(54/24);
+    margin-top: rem(25);
+}
+
+.p-about__btn {
+    max-width: rem(187);
+    margin: 0 auto;
+    margin-top: rem(50);
+}

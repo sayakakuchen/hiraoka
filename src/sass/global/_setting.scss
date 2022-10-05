@@ -9,7 +9,7 @@ $l-inner: 1100px;
 
 // 余白
 $padding-pc: 25px;
-$padding-sp: 20px;
+$padding-sp: 25px;
 // ※PC時：デザインカンプの余白の幅ではない。PC時は通常25pxで大丈夫！
 
 
@@ -17,12 +17,19 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
-$base-font-family: "";
-$second-font-family: "";
+@font-face {
+  font-family: 'din';
+  src: url(../font/din1451alt.ttf);
+}
+
+$main-font: 'Noto Sans JP', sans-serif;
+$sub-font: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+$en-font:'Oswald', sans-serif;
+$din:'din',sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
-  font-family: $base-font-family;
+  font-family: $main-font
 }
 
 // フォントウェイト
@@ -35,8 +42,9 @@ $bold: 700;
 ////////////////////
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
-$black: #111;
+$black: #000;
 $white: #fff;
+$yellow:#f6ea04;
 
 
 ////////////////////

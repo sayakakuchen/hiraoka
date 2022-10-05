@@ -1,1 +1,10 @@
-<a href="<%= link %>" class="c-btn"><%= text %></a>
+<% if ( type === "yellow"){ %>
+    <a href="<%= link %>" class="c-btn c-btn--yellow"><%= text %></a>
+<% } else if (type === "yellowshadow") { %>
+    <a href="<%= link %>" class="c-btn c-btn--shadow c-btn--yellow"><%= text %></a>
+<% } else if (type === "shadow") { %>
+    <a href="<%= link %>" class="c-btn c-btn--shadow"><%= text %></a>
+<% } else { %>
+    <a href="<%= link %>" class="c-btn"><%= text %></a>
+<% } %>
+

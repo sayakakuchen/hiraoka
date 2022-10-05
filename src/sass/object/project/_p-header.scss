@@ -1,0 +1,24 @@
+@use 'global' as *;
+
+.p-header {
+    height: rem(67.5);
+}
+
+.p-header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.p-header__logo {
+    width: rem(214);
+}
+
+.p-header__logo a {
+    display: block;
+}
+
+.p-header__hamburger {
+    width: rem(42.5);
+    height: rem(42.5);
+    margin-left: auto;
+}

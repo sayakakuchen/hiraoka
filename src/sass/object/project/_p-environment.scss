@@ -1,0 +1,31 @@
+@use 'global' as *;
+
+.p-environment {
+    background: linear-gradient(to bottom,white 0%, white rem(170), $yellow rem(170),$yellow rem(680),white rem(680),white 100%);
+}
+
+.p-environment__inner {
+
+}
+
+.p-environment__title {
+
+}
+
+.p-environment__img {
+    margin-top: rem(50);
+}
+
+.p-environment__subtitle {
+    margin-top: rem(20);
+}
+
+.p-environment__text {
+    margin-top: rem(20);
+}
+
+.p-environment__btn {
+    max-width: rem(187);
+    margin: 0 auto;
+    margin-top: rem(50);
+}

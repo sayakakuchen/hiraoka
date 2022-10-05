@@ -1,0 +1,22 @@
+@use 'global' as *;
+
+.c-title {
+    text-align: center;
+}
+
+.c-title--white {
+    color: $white;
+}
+
+.c-title__ja {
+    font-weight: bold;
+    font-size: rem(15);
+
+}
+
+.c-title__en {
+    font-family: $en-font;
+    font-size: rem(50);
+    font-weight: 600;
+    margin-top: rem(10);
+}

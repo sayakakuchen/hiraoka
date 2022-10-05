@@ -1,0 +1,23 @@
+@use 'global' as *;
+
+.c-subtitle {
+    position: relative;
+    text-align: center;
+    font-size: rem(25);
+    font-weight: bold;
+    line-height: calc(70/50);
+    padding-bottom: rem(25);
+    font-feature-settings: "palt";
+    letter-spacing: 0.05em;
+}
+
+.c-subtitle::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: rem(150);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    background-color: $black;
+}
