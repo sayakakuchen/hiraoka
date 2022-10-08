@@ -1,0 +1,85 @@
+@use 'global' as *;
+
+.p-concept {
+
+}
+
+.p-concept__inner.l-inner {
+    @include mq(md) {
+        position: relative;
+        padding-left: rem(190);
+    }
+}
+
+.p-concept__title {
+    @include mq(md) {
+        width: 50%;
+    }
+}
+
+.p-concept__subtitle {
+    font-size: rem(45);
+    font-weight: bold;
+    text-align: center;
+    margin-top: rem(50);
+
+    @include mq(md) {
+        font-size: rem(75);
+        width: 50%;
+        text-align: left;
+        line-height: calc(110/75);
+    }
+}
+
+.p-concept__wrap {
+
+}
+
+.p-concept__img {
+    width: 100%;
+    margin-top: rem(50);
+
+    @include mq(md) {
+        max-width: rem(802);
+        position: absolute;
+        width: 50%;
+        right: 0;
+        bottom: rem(60);
+    }
+}
+
+.p-concept__content {
+    margin-top: rem(32);
+
+    @include mq(md) {
+        width: 50%;
+    }
+}
+
+.p-concept__text.c-text {
+    font-size: rem(13.5);
+
+    @include mq(md) {
+        max-width: rem(695);
+        font-size: rem(22);
+    }
+}
+
+.p-concept__text span {
+    display: inline-block;
+    font-weight: bold;
+    background: linear-gradient(to bottom ,white 20% , $yellow 20%, $yellow 80%, white 80%);
+}
+
+.p-concept__btn {
+    max-width: rem(187.5);
+    width: 100%;
+    margin: 0 auto;
+    margin-top: rem(50);
+
+    @include mq(md) {
+        max-width: rem(310);
+        margin: initial;
+        margin-top: rem(100);
+    }
+}

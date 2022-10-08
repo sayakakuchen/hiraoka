@@ -26,13 +26,9 @@ html {
   font-size: 16px;
 
   //~375px
-  @include mq("xl") {
+  @include mq("md") {
     // font-size: vw(strip-unit($l-inner), 16);
-    font-size: vw(1280, 16);
-  }
-
-  @include mq(md) {
-    font-size: 16px;
+    font-size: vw(1920, 16);
   }
 
   @media (max-width: 375px) {
@@ -53,13 +49,18 @@ a {
   text-decoration: none;
   color: inherit;
   transition: opacity 0.3s;
-  @include mq("md") {
-    &:hover {
-      opacity: 0.8;
-    }
-  }
 }
 
 picture {
   display: block;
+}
+
+button {
+  display: block;
+}
+
+html {
+  &.is-fixed {
+    overflow: hidden;
+  }
 }

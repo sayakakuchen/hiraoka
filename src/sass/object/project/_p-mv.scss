@@ -1,0 +1,149 @@
+@use 'global' as *;
+
+.p-mv {
+    padding-top: rem(67.5);
+    padding-bottom: rem(65);
+
+    @include mq(md) {
+        padding-top: rem(80);
+    }
+}
+
+.p-mv__inner {
+
+}
+
+.p-mv__title {
+    font-size: rem(75);
+    font-family: $en-font;
+    color: $yellow;
+
+    @include mq(md) {
+        font-size: rem(150);
+    }
+}
+
+.p-mv__subtitle {
+    font-size: rem(25);
+    font-weight: bold;
+    font-family: $sub-font;
+    text-align: center;
+    line-height: calc(70/50);
+    margin-top: rem(16);
+
+    @include mq(md) {
+        font-size: rem(70);
+        line-height: calc(105 / 70);
+        text-align: left;
+        margin-top: rem(120);
+        margin-left: rem(52);
+    }
+}
+
+.p-mv__subtitle span {
+    @include mq(md) {
+        display: block;
+        font-size: rem(20);
+        line-height: calc(35/20);
+        font-family: $en-font;
+        margin-top: rem(20);
+    }
+}
+
+.p-mv__img {
+    max-width: rem(220);
+    margin: 0 auto;
+    margin-top: rem(24);
+
+    @include mq(md) {
+        position: absolute;
+        max-width: rem(500);
+        margin-top: 0;
+        top: rem(450);
+        right: calc(50% - #{rem(447)});
+    }
+}
+
+.p-mv__scroll {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: rem(70);
+
+    @include mq(md) {
+        margin-top: rem(155);
+        margin: initial;
+        margin-left: rem(280);
+        margin-top: rem(160);
+    }
+}
+
+.p-mv__scroll span {
+    display: inline-block;
+    font-family: $en-font;
+
+    @include mq(md) {
+        font-size: rem(18);
+    }
+}
+
+.p-mv__scroll::before {
+    position: absolute;
+    content: "";
+    width: rem(49);
+    height: rem(49);
+    background-color: $yellow;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: translate(-50%,-50%);
+
+    @include mq(md) {
+        width: rem(80);
+        height: rem(80);
+    }
+}
+
+.p-mv__scroll::after {
+    position: absolute;
+    content: "";
+    width: rem(9);
+    height: rem(28);
+    background: url(../images/common/scrolldown.png) center center / contain no-repeat;
+    left: 50%;
+    transform: translateX(-50%);
+    // top: rem(22);
+    z-index: 1;
+    animation: scroll 1s ease-in-out infinite;
+
+    @include mq(md) {
+        width: rem(13);
+        height: rem(40);
+    }
+}
+
+@keyframes scroll {
+    0% {
+        top: rem(30);
+    }
+
+    50% {
+        top: rem(22);
+    }
+
+    100% {
+        top: rem(30);
+    }
+}
+
+.p-mv__entry {
+    display: none;
+    @include mq(md) {
+        display: block;
+        max-width: rem(380);
+        width: 100%;
+        margin-left: auto;
+        margin-top: rem(-55);
+    }
+}

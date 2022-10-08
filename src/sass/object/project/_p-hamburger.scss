@@ -8,6 +8,11 @@
     background-color: $black;
 }
 
+.p-hamburger.is-active {
+    background-color: $white;
+    transition: all 0.3s;
+}
+
 .p-hamburger span {
     position: absolute;
     width: rem(13);
@@ -15,24 +20,47 @@
     background-color: $white;
     left: 50%;
     transition: all 0.3s;
+
+    @include mq(md) {
+        width: rem(30);
+        height: rem(5);
+    }
 }
 
 .p-hamburger.is-active span:nth-child(1) {
+    background-color: $black;
     top: rem(20);
     transform: translateX(-50%) rotate(45deg);
+
+    @include mq(md) {
+        top: rem(47);
+    }
 }
 
 .p-hamburger.is-active span:nth-child(2) {
+    background-color: $black;
     top: rem(20);
     transform: translateX(-50%) rotate(-45deg);
+
+    @include mq(md) {
+        top: rem(47);
+    }
 }
 
 .p-hamburger span:nth-child(1) {
     transform: translateX(-50%);
     top: rem(16);
+
+    @include mq(md) {
+        top: rem(38);
+    }
 }
 
 .p-hamburger span:nth-child(2) {
     transform: translateX(-50%);
     top: rem(24);
+
+    @include mq(md) {
+        top: rem(56);
+    }
 }

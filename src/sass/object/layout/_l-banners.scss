@@ -1,7 +1,7 @@
-@use "global" as *;
+@use 'global' as *;
 
-.l-footer {
-    margin-top: rem(100);
+.l-banners {
+    margin-top: rem(75);
 
     @include mq(md) {
         margin-top: rem(200);

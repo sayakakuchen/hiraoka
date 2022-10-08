@@ -1,0 +1,80 @@
+@use 'global' as *;
+
+.p-training {
+    @include mq(md) {
+        background: linear-gradient(to right, white rem(300), transparent rem(300)), linear-gradient(to bottom,white 0%,white rem(100),$yellow rem(100), $yellow calc(100% - #{rem(100)}), white calc(100% - #{rem(100)}));
+        padding-bottom: rem(295);
+    }
+}
+
+.p-training__inner.l-inner {
+    position: relative;
+    @include mq(md) {
+
+    }
+}
+
+.p-training__title {
+
+}
+
+.p-training__img {
+    width: 100%;
+    margin-top: rem(50);
+
+    @include mq(md) {
+        width: 51%;
+        position: absolute;
+        margin-top: 0;
+    }
+}
+
+.p-training__img2 {
+    display: none;
+    @include mq(md) {
+        position: absolute;
+        display: block;
+        width: 34%;
+        bottom: rem(-268);
+        left: rem(400);
+    }
+}
+
+.p-training__content {
+    margin-top: rem(25);
+
+    @include mq(md) {
+        width: 27%;
+        margin-top: 0;
+        margin-right: rem(128);
+        margin-left: auto;
+        margin-top: 0;
+    }
+}
+
+.p-training__subtitle {
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}
+
+.p-training__text {
+    margin-top: rem(25);
+
+    @include mq(md) {
+        margin-top: rem(36);
+    }
+}
+
+.p-training__btn {
+    max-width: rem(187.5);
+    width: 100%;
+    margin: 0 auto;
+    margin-top: rem(50);
+
+    @include mq(md) {
+        max-width: rem(310);
+        margin: initial;
+        margin-top: rem(100);
+    }
+}

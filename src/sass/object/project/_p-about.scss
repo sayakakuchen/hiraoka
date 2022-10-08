@@ -1,21 +1,45 @@
 @use 'global' as *;
 
 .p-about {
-
+    
 }
 
-.p-about__inner {
+.p-about__inner.l-inner {
+    position: relative;
+    @include mq(md) {
+        max-width: rem(1770);
+    }
+}
 
+.p-about__content {
+    @include mq(md) {
+        width: 50%;
+        padding-left: rem(90);
+        padding-right: rem(45);
+    }
 }
 
 .p-about__title {
     max-width: rem(272);
     margin: 0 auto;
+
+    @include mq(md) {
+        max-width: rem(500);
+        margin: initial;
+    }
 }
 
 .p-about__img {
     width: 100%;
     margin-top: rem(50);
+
+    @include mq(md) {
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+    }
 }
 
 .p-about__subtitle {
@@ -26,10 +50,21 @@
     font-size: rem(12);
     line-height: calc(54/24);
     margin-top: rem(25);
+
+    @include mq(md) {
+        font-size: rem(24);
+        margin-top: rem(40);
+    }
 }
 
 .p-about__btn {
     max-width: rem(187);
     margin: 0 auto;
     margin-top: rem(50);
+
+    @include mq(md) {
+        max-width: rem(300);
+        margin: initial;
+        margin-top: rem(75);
+    }
 }

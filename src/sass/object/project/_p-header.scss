@@ -1,16 +1,36 @@
 @use 'global' as *;
 
 .p-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: rem(67.5);
+    z-index: 1001;
+
+    @include mq(md) {
+        height: rem(200);
+        pointer-events: none;
+    }
 }
 
-.p-header__inner {
+.p-header__inner.l-inner {
+    padding: 0 rem(16) 0 rem(25);
     display: flex;
     align-items: center;
+    max-width: unset;
+
+    @include mq(md) {
+        padding-right: rem(50);
+    }
 }
 
 .p-header__logo {
     width: rem(214);
+
+    @include mq(md) {
+        display: none;
+    }
 }
 
 .p-header__logo a {
@@ -21,4 +41,17 @@
     width: rem(42.5);
     height: rem(42.5);
     margin-left: auto;
+    z-index: 1000;
+    pointer-events: initial;
+    cursor: pointer;
+
+    @include mq(md) {
+        width: rem(100);
+        height: rem(100);
+    }
+}
+
+.p-header__drawer {
+    z-index: 999;
+    pointer-events: initial;
 }

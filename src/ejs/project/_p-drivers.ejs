@@ -1,0 +1,66 @@
+<div class="p-drivers">
+    <div class="p-drivers__inner l-inner">
+        <div class="p-drivers__title">
+            <%- include('../component/_c-title',{
+                type:'',
+                subtitle:'先輩紹介',
+                title:'DRIVERS'
+            }) %> 
+        </div>
+        <div class="p-drivers__subtitle">
+            <%- include('../component/_c-subtitle',{
+                subtitle:'先輩ドライバーへの<br class="u-mobile">インタビュー'
+            }) %> 
+        </div>
+        <p class="p-drivers__text c-text">
+            枚岡交通で働く先輩ドライバーにインタビューしました。入社動機、やりがい、働き方、入社して良かった事など、それぞれの思いをご覧ください。
+        </p>
+        <div class="p-drivers__slider js-drivers-slider">
+            <div class="p-drivers__item">
+                <picture class="p-drivers__item-img">
+                    <source srcset="./images/top/drivers_01_pc.jpg" media="(min-width:768px)">
+                    <img src="./images/top/drivers_01.jpg" alt="佐々木 隆太">
+                </picture>
+                <div class="p-drivers__content">
+                    <p class="p-drivrs__year">2019年 中途入社</p>
+                    <p class="p-drivers__position">ドライバー</p>
+                    <div class="p-drivers__name">佐々木 隆太</div>
+                    <div class="p-drivers__name-en">SASAKI RYUTA</div>
+                </div>
+            </div>
+
+            <div class="p-drivers__item">
+                <picture class="p-drivers__item-img">
+                    <source srcset="./images/top/drivers_02_pc.jpg" media="(min-width:768px)">
+                    <img src="./images/top/drivers_02.jpg" alt="山戸 悠水">
+                </picture>
+                <div class="p-drivers__content">
+                    <p class="p-drivrs__year">2021年 中途入社</p>
+                    <p class="p-drivers__position">ドライバー</p>
+                    <div class="p-drivers__name">山戸 悠水</div>
+                    <div class="p-drivers__name-en">YAMATO YUMI</div>
+                </div>
+            </div>
+
+            <div class="p-drivers__item">
+                <picture class="p-drivers__item-img">
+                    <source srcset="./images/top/drivers_03_pc.jpg" media="(min-width:768px)">
+                    <img src="./images/top/drivers_03.jpg" alt="矢野  雅也">
+                </picture>
+                <div class="p-drivers__content">
+                    <p class="p-drivrs__year">2019年 中途入社</p>
+                    <p class="p-drivers__position">ドライバー</p>
+                    <div class="p-drivers__name">矢野  雅也</div>
+                    <div class="p-drivers__name-en">YANO MASAYA</div>
+                </div>
+            </div>
+        </div>
+        <button class="p-drivers__btn">
+            <%- include('../component/_c-btn',{
+                type:'shadow',
+                link:'#',
+                text:'詳しく見る'
+            }) %> 
+        </div>
+    </div>
+</div>

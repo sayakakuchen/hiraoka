@@ -49,6 +49,31 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
+  $('.js-hamburger').click(function(){
+    $(this).toggleClass('is-active');
+    $('.js-drawer').toggleClass('is-active');
+    $('html').toggleClass('is-fixed');
+  });
+
+  $('.js-drivers-slider').slick({
+    slidesToShow: 3, 
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          infinite:false,
+          arrows:false,
+          dots:true,
+          dotsClass: 'slide-dots',
+          slidesToShow: 1, 
+        }
+      }
+    ]
+  });
 
 
+  $('.js-entry a').on({
+    "mouseenter": function(){$(this).children('img').attr('src', './images/common/entry_icon2.png');},
+    "mouseleave": function(){$(this).children('img').attr('src', './images/common/entry_icon.png');}
+  });
 });

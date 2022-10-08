@@ -1,0 +1,53 @@
+@use 'global' as *;
+
+.c-entryBtn {
+    
+}
+
+.c-entryBtn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $yellow;
+    height: rem(45);
+    border-radius: rem(22.5);
+    transition: all 0.1s;
+    color: $black;
+
+    @include mq(md) {
+        height: rem(80);
+        border-radius: rem(40);
+    }
+}
+
+.c-entryBtn a:hover {
+    @include mq(md) {
+        background-color: $black;
+    }
+}
+
+.c-entryBtn img {
+    width: rem(18);
+
+    @include mq(md) {
+        width: rem(31);
+    }
+}
+
+.c-entryBtn p {
+    color: $black;
+    font-size: rem(19);
+    font-weight: bold;
+    margin-left: rem(12);
+    transition: all 0.1s;
+
+    @include mq(md) {
+        font-size: rem(32);
+    }
+}
+
+.c-entryBtn a:hover p {
+    @include mq(md) {
+        color: $yellow;
+    }
+}
