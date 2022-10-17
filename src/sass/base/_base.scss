@@ -62,5 +62,8 @@ button {
 html {
   &.is-fixed {
     overflow: hidden;
+    @include mq(md) {
+      overflow: scroll;
+    }
   }
 }

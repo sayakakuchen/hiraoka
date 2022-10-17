@@ -39,7 +39,7 @@
     @include mq(md) {
         max-width: unset;
         width: 100vw;
-        margin-left: calc(50% - 50vw - #{rem(90)});
+        margin-left: calc(50% - 50vw - #{rem(85)});
         margin-top: rem(80);
         padding: 0;
     }
