@@ -19,7 +19,6 @@
         font-size: rem(26);
         text-align: left;
     }
-
 }
 
 .c-title__en {
@@ -31,4 +30,22 @@
     @include mq(md) {
         font-size: rem(100);
     }
+}
+
+.c-title__en span {
+    display: inline-block;
+    opacity: 0;
+    transform: translate(0, 30px);
+    color: #FFCC00;
+}
+
+.c-title__en span.is-show {
+    opacity: 1;
+    transform: none;
+    color: $black;
+    transition: 0.3s opacity 0s linear, 0.2s color 0.4s linear, 0.3s transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.c-title--white  span.is-show {
+    color: $white;
 }

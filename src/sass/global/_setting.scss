@@ -99,3 +99,16 @@ $mediaquerys: (
     display: none;
   }
 }
+
+// フェードイン
+.js-scroll-fade {
+  position: relative;
+  opacity: 0;
+  transform: translateY(5%);
+  transition: all 1s cubic-bezier(0.155, 0.910, 0.695, 0.950);
+}
+
+.is-scroll-fade {
+  opacity: 1;
+  transform: translateY(0);
+}

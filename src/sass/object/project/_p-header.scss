@@ -21,15 +21,16 @@
     max-width: unset;
 
     @include mq(md) {
+        align-items: flex-start;
+        padding-top: rem(50);
         padding-right: rem(50);
     }
 }
 
 .p-header__logo {
     width: rem(214);
-
     @include mq(md) {
-        display: none;
+        width: rem(320);
     }
 }
 

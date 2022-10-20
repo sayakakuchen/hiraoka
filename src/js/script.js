@@ -1,26 +1,14 @@
 
-jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
+jQuery(function ($) { 
 
-  var topBtn = $('.page-top');
-  topBtn.hide();
 
-  // ボタンの表示設定
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 70) {
-      // 指定px以上のスクロールでボタンを表示
-      topBtn.fadeIn();
+    var mv = $('.p-mv').innerHeight(); 
+    if ($(this).scrollTop() > mv / 4) {
+      $('.js-entry').fadeIn();
     } else {
-      // 画面が指定pxより上ならボタンを非表示
-      topBtn.fadeOut();
+      $('.js-entry').fadeOut();
     }
-  });
-
-  // ボタンをクリックしたらスクロールして上に戻る
-  topBtn.click(function () {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 300, 'swing');
-    return false;
   });
 
   // ヘッダー
@@ -76,4 +64,47 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     "mouseenter": function(){$(this).children('img').attr('src', './images/common/entry_icon2.png');},
     "mouseleave": function(){$(this).children('img').attr('src', './images/common/entry_icon.png');}
   });
+
+  // フェードイン
+  const controller = new ScrollMagic.Controller()
+
+  $(".js-scroll-fade").each(function (i, node) {
+  var scene = new ScrollMagic.Scene({
+      triggerElement: node,
+      triggerHook: 0.8,
+      reverse: false,
+  })
+  .setClassToggle(this, "is-scroll-fade")
+  .addTo(controller) 
+  });
+  
 });
+
+
+// タイトル
+var textWrapper = document.querySelectorAll('.c-title__en');
+textWrapper.forEach((t) => (
+    t.innerHTML = t.textContent.replace(/\S/g, "<span class=''>$&</span>"
+    )
+));
+
+
+var trimNum = 0;
+window.onload = function() {
+  jQuery(function($) {
+    $('.c-title').on('inview',function(){
+      trimNum = 0;
+      $(this).find('.c-title__en').each(function(){
+        var elm = $(this).find('span');
+        $(this).find('span').each(function(){
+          var elm = $(this);
+          setTimeout(function(){
+            elm.addClass('is-show');
+          },trimNum * 50);
+          trimNum++;
+        })
+      });
+    });
+  });
+};
+

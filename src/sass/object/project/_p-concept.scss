@@ -38,14 +38,31 @@
 .p-concept__img {
     width: 100%;
     margin-top: rem(50);
-
+    animation: conceptImg 3s linear infinite;
     @include mq(md) {
         max-width: rem(802);
         position: absolute;
         width: 50%;
-        right: 0;
+        right: calc(50% - #{rem(800)});
         bottom: rem(60);
     }
+}
+
+@keyframes conceptImg {
+    0% {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(20%);
+    } 
 }
 
 .p-concept__content {

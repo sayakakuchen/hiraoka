@@ -12,7 +12,7 @@
 
 .p-drivers__inner.l-inner {
     @include mq(md) {
-        padding-left: rem(190);
+        padding:0 rem(190);
     }
 }
 
@@ -39,7 +39,7 @@
     @include mq(md) {
         max-width: unset;
         width: 100vw;
-        margin-left: calc(50% - 50vw - #{rem(85)});
+        margin-left: calc(50% - 50vw);
         margin-top: rem(80);
         padding: 0;
     }
