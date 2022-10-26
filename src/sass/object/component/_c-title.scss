@@ -21,6 +21,11 @@
     }
 }
 
+.c-title--center .c-title__ja {
+    text-align: center;
+    font-size: rem(14);
+}
+
 .c-title__en {
     font-family: $en-font;
     font-size: rem(50);
@@ -28,7 +33,16 @@
     margin-top: rem(10);
 
     @include mq(md) {
+        text-align: center;
         font-size: rem(100);
+    }
+}
+
+.c-title--center .c-title__en {
+    font-size: rem(45);
+
+    @include mq(md) {
+        font-size: rem(80);
     }
 }
 

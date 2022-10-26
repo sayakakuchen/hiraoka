@@ -60,7 +60,12 @@ jQuery(function ($) {
   });
 
 
-  $('.js-entry a').on({
+  $('.js-entryBtn a').on({
+    "mouseenter": function(){$(this).children('img').attr('src', './images/common/entry_icon2.png');},
+    "mouseleave": function(){$(this).children('img').attr('src', './images/common/entry_icon.png');}
+  });
+
+  $('.js-entryBtn').on({
     "mouseenter": function(){$(this).children('img').attr('src', './images/common/entry_icon2.png');},
     "mouseleave": function(){$(this).children('img').attr('src', './images/common/entry_icon.png');}
   });

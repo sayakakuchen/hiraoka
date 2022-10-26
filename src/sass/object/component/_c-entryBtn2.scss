@@ -1,0 +1,64 @@
+@use 'global' as *;
+
+.c-entryBtn2 {
+    display: inline-block;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: $yellow;
+    transition: all 0.1s;
+    color: $black;
+    padding: rem(25) 0;
+    margin-left: calc(50% - 50vw);
+    @include mq(md) {
+        position: relative;
+        width: 100%;
+        padding: rem(40) 0;
+        margin: initial;
+    }
+}
+
+.c-entryBtn2:hover {
+    @include mq(md) {
+        background-color: $black;
+        color: $yellow;
+    }
+}
+
+.c-entryBtn2 img {
+    width: rem(35);
+
+    @include mq(md) {
+        position: absolute;
+        width: rem(70);
+        left: rem(64);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.c-entryBtn2 p {
+    text-align: center;
+    font-size: rem(30);
+    font-family: $sub-font;
+    font-weight: bold;
+    line-height: rem(24);
+    margin-left: rem(20);
+    margin-top: rem(5);
+
+    @include mq(md) {
+        font-size: rem(71);
+        line-height: rem(56);
+        margin-top: rem(20);
+    }
+}
+
+.c-entryBtn2 p span {
+    font-size: rem(12);
+
+    @include mq(md) {
+        font-size: rem(30);
+    }
+}

@@ -22,6 +22,7 @@
     font-weight: bold;
     text-align: center;
     margin-top: rem(50);
+    line-height: calc(110/75);
 
     @include mq(md) {
         font-size: rem(75);

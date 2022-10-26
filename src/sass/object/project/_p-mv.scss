@@ -206,7 +206,7 @@
 }
 
 .p-mv__entry {
-    display: none;
+    display: none !important;
     @include mq(md) {
         position: fixed;
         z-index: 999;
