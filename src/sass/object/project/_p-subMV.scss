@@ -14,30 +14,27 @@ $layer-mv-black:1;
 .p-subMV {
 	position: relative;
 	width: 100%;
-	height: 100vh;
+	height: rem(375);
+  background: url(../images/common/subMV_01.jpg) no-repeat center;
   background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-  background-image: url(../images/common/subMV_01.jpg);
 
   @include mq('md') {
     background-image: url(../images/common/subMV_01_pc.jpg);
   }
 }
 
-.p-subMV__text {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 100%;
+.p-subMV__main-text{
+  position: absolute;
 	z-index: $layer-mv-text;
+	top: 50%;
+	width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+	transform: translateY(-50%);
 }
 
-.p-subMV__main-text,
-.p-subMV__sub-text {
-	text-align: center;
-}
-
-.p-subMV__sub-text {
-	margin-top: 0;
+.p-subMV__main-text::before {
+	content: attr(data-ja);
+	display: inline-block;
+	width: 100%;
 }
