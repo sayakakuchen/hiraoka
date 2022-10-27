@@ -4,11 +4,11 @@
 	position: relative;
 	width: 100%;
 	height: rem(375);
-	background: url(../images/common/subMV_01.jpg) no-repeat center;
+	background: url(../images/environment/environment_subMV_01.jpg) no-repeat center;
 	background-size: cover;
 
 	@include mq('md') {
-		background-image: url(../images/common/subMV_01_pc.jpg);
+		background-image: url(../images/environment/environment_subMV_01_pc.jpg);
 	}
 }
 
@@ -30,8 +30,12 @@ opacity: 0.4;
 	z-index: 3;
 	top: 50%;
 	width: 100%;
+	color: $white;
 	text-align: center;
-	text-transform: capitalize;
+	font-family: $en-font;
+	font-size: rem(45);
+	line-height: 1;
+	text-transform: uppercase;
 	transform: translateY(-50%);
 }
 
@@ -39,4 +43,7 @@ opacity: 0.4;
 	content: attr(data-ja);
 	display: inline-block;
 	width: 100%;
+	color: $white;
+	font-size: rem(14);
+	line-height:1;
 }
