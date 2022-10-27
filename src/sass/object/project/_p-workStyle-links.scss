@@ -1,0 +1,35 @@
+
+@use "global"as *;
+
+
+.p-workStyle-links {
+
+}
+
+.p-workStyle-links_link {
+  display: inline-block;
+  width: rem(170);
+  padding:rem(50) rem(10) rem(15);
+  max-width: 100%;
+  background-color: $yellow;
+}
+
+.p-workStyle-links_link span {
+  display: inline-block;
+}
+
+.p-workStyle-links_link-arrow {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+.p-workStyle-links_link-arrow::before {
+  content: '';
+  position: absolute;
+  width: rem(15);
+  height: rem(15);
+  border-top: solid 2px $black;
+  border-right: solid 2px $black;
+  transform: rotate(135deg);
+}
