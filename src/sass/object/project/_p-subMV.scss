@@ -1,28 +1,28 @@
-@use 'global' as *;
+@use 'global'as *;
 
 .p-subMV {
 	position: relative;
 	width: 100%;
 	height: rem(375);
-  background: url(../images/common/subMV_01.jpg) no-repeat center;
-  background-size: cover;
+	background: url(../images/common/subMV_01.jpg) no-repeat center;
+	background-size: cover;
 
-  @include mq('md') {
-    background-image: url(../images/common/subMV_01_pc.jpg);
-  }
+	@include mq('md') {
+		background-image: url(../images/common/subMV_01_pc.jpg);
+	}
 }
 
-.p-subMV__main-text{
-  position: absolute;
+.p-subMV__text {
+	position: absolute;
 	z-index: 3;
 	top: 50%;
 	width: 100%;
-  text-align: center;
-  text-transform: capitalize;
+	text-align: center;
+	text-transform: capitalize;
 	transform: translateY(-50%);
 }
 
-.p-subMV__main-text::before {
+.p-subMV__text::before {
 	content: attr(data-ja);
 	display: inline-block;
 	width: 100%;
