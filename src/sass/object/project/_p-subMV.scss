@@ -1,17 +1,6 @@
 @use 'global' as *;
 
 .p-subMV {
-  
-}
-
-
-// =====MV=====
-$layer-mv-swiper:0;
-$layer-mv-text:3;
-$layer-mv-black:1;
-
-
-.p-subMV {
 	position: relative;
 	width: 100%;
 	height: rem(375);
@@ -25,7 +14,7 @@ $layer-mv-black:1;
 
 .p-subMV__main-text{
   position: absolute;
-	z-index: $layer-mv-text;
+	z-index: 3;
 	top: 50%;
 	width: 100%;
   text-align: center;
