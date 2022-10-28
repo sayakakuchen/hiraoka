@@ -26,7 +26,7 @@
   background-color: $black;
 }
 
-.p-workStyle__subtitle {
+.p-yellowTitle {
   padding-top: rem(10);
   font-size: rem(17.5);
   line-height: 1.75;
@@ -171,11 +171,11 @@
   background-color: $yellow;
 }
 
-.p-workStyle__calendarHeader {
+.p-calendar__titleWrapper {
   text-align: center;
 }
 
-.p-workStyle__subtitle {
+.p-yellowTitle {
   display: inline-block;
   background-color: $yellow;
   padding: 0 rem(4.4);
@@ -187,6 +187,6 @@
   }
 }
 
-.p-workStyle__calendarContents {
-  
+.p-calendar__description {
+  display: flex;
 }
