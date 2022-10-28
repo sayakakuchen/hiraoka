@@ -68,6 +68,10 @@
   }
 }
 
+.p-workStyle__unit + .p-workStyle__unit {
+  margin-top: rem(43);
+}
+
 .p-workStyle__unit:nth-child(even) {
   margin-left: 0;
 }
