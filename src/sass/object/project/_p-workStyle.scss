@@ -112,10 +112,20 @@
   }
 }
 
+.p-workStyle__unit:nth-child(even) .p-workStyle__unitTitle {
+  justify-content: end;
+  text-align: right;
+}
+
+.p-workStyle__unit:nth-child(even) .p-workStyle__unitTitle::before {
+  order: 2;
+}
+
 .p-workStyle__unitTitle::before {
   content: "";
   display: inline-block;
-  bottom: 0;
+  // flex-shrink: 0;
+  // bottom: 0;
   width: rem(30);
   height: rem(4.5);
   margin-right: rem(7.35);
@@ -123,8 +133,9 @@
   background-size: cover;
 
   @include mq('md') {
-    width: 100%;
-    left: 0;
+    width: rem(100);
+    height: rem(2);
+    background-image: url(../images/environment/workStyle_dotline_pc.png);
   }
 }
 
