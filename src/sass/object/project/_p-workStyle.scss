@@ -190,3 +190,22 @@
 .p-calendar__description {
   display: flex;
 }
+
+.p-calendar__description-term::before {}
+
+.p-calendar__description-icon {
+  display: block;
+  // width: rem(12.5);
+  // height: rem(12.5);
+  padding: rem(7) rem(5);
+  border-radius: 50%;
+  background-color: #02B5FD;
+}
+
+
+.p-calendar__description-icon img {
+  width: rem(12.5);
+  height: rem(12.5);
+  max-width: initial;
+  filter: invert(99%) sepia(0%) saturate(2%) hue-rotate(355deg) brightness(109%) contrast(101%);
+}
