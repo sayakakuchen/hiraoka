@@ -7,6 +7,7 @@
 }
 
 .p-workStyle-links_link {
+  position: relative;
   display: inline-block;
   width: rem(170);
   padding:rem(50) rem(10) rem(15);
@@ -14,8 +15,31 @@
   background-color: $yellow;
 }
 
+.p-workStyle-links_link::before {
+  content:'';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width:calc(100% - rem(10));
+  max-width: 100%;
+  height: calc(100% - rem(10));
+  border: 0.88px solid $black;
+}
+
 .p-workStyle-links_link span {
   display: inline-block;
+}
+
+.p-workStyle-links_link-text {
+  font-size: rem(16);
+  font-weight: bold;
+  line-height: 1.75;
+}
+
+.p-workStyle-links_link-subText {
+font-size: rem(10);
+line-height: 1.75;
 }
 
 .p-workStyle-links_link-arrow {
