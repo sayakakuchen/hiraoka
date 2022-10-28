@@ -62,7 +62,7 @@
 }
 
 .p-history__units::before {
-  background-color:$yellow;
+  background-color: $yellow;
   content: "";
   height: 100%;
   left: 5%;
@@ -87,6 +87,7 @@
     width: 50%;
   }
 }
+
 .p-history__unit:nth-child(even) {
   margin-left: 0;
 }
@@ -100,21 +101,26 @@
   margin: 0;
   color: $black;
   font-weight: bold;
-  padding:  rem(27.5) 0 0 rem(92);
-  position: relative;
+  padding: rem(27.5) 0 0 rem(78);
+  // position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.25rem;
 
 }
 
 .p-history__date::before {
-  background-color: #707070;
+  background: url(../images/environment/workStyle_dotline.png) no-repeat center;
+  background-size: cover;
+  display: inline-block;
   bottom: 0;
   content: "";
-  height: 1px;
-  height: 0.0625rem;
-  left: 5%;
-  position: absolute;
-  width: 95%;
+  // left: 0;
+  // position: absolute;
+  width: rem(30);
+  height: rem(4.5);
+  margin-right: rem(7.35);
 
 
   @include mq('md') {
@@ -133,15 +139,15 @@
   top: 0;
   left: 0;
 
-// .p-history__date::before {
-//   content: attr(data-time);
-//   position: absolute;
-//   width: rem(72);
-//   height: rem(72);
-//   border-radius: 50%;
-//   background-color: $yellow;
-//   top: 0;
-//   left: 0;
+  // .p-history__date::before {
+  //   content: attr(data-time);
+  //   position: absolute;
+  //   width: rem(72);
+  //   height: rem(72);
+  //   border-radius: 50%;
+  //   background-color: $yellow;
+  //   top: 0;
+  //   left: 0;
 
 
   @include mq('md') {
@@ -157,5 +163,5 @@
   line-height: 1.5;
   font-size: 1rem;
   margin-top: rem(5);
-  padding: 0 0 0 rem(92);
+  padding: 0 0 0 rem(78 + 30 + 7.35);
 }
