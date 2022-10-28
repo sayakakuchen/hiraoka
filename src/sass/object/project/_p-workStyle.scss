@@ -38,25 +38,14 @@
 //とりあえずコピペ
 
 .p-history__main {
-  font-size: 16px;
-  font-family: 游ゴシック体, YuGothic, 游ゴシック, "Yu Gothic", sans-serif;
   color: #000;
   line-height: 1;
-  text-rendering: optimizeSpeed;
-  box-sizing: border-box;
   position: relative;
-  transition: all 1s cubic-bezier(0.155, 0.91, 0.695, 0.95);
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .p-history__units {
-  font-size: 16px;
-  font-family: 游ゴシック体, YuGothic, 游ゴシック, "Yu Gothic", sans-serif;
   color: #000;
   line-height: 1;
-  text-rendering: optimizeSpeed;
-  box-sizing: border-box;
   margin-top: 2.375rem;
   padding-bottom: 5.625rem;
   position: relative;
@@ -79,8 +68,6 @@
   left: 5%;
   position: absolute;
   top: 0;
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
   width: 1px;
   width: 0.0625rem;
 
@@ -92,12 +79,8 @@
 }
 
 .p-history__unit {
-  font-size: 16px;
-  font-family: 游ゴシック体, YuGothic, 游ゴシック, "Yu Gothic", sans-serif;
   color: #000;
   line-height: 1;
-  text-rendering: optimizeSpeed;
-  box-sizing: border-box;
   margin-left: auto;
   width: 100%;
 
@@ -111,10 +94,7 @@
 }
 
 .p-history__date {
-  font-family: 游ゴシック体, YuGothic, 游ゴシック, "Yu Gothic", sans-serif;
   line-height: 1;
-  text-rendering: optimizeSpeed;
-  box-sizing: border-box;
   margin: 0;
   color: #216F00;
   font-weight: bold;
@@ -165,10 +145,6 @@
 }
 
 .p-history__text {
-  font-family: 游ゴシック体, YuGothic, 游ゴシック, "Yu Gothic", sans-serif;
-  color: #000;
-  text-rendering: optimizeSpeed;
-  box-sizing: border-box;
   margin: 0;
   line-height: 1.5;
   font-size: 1rem;
