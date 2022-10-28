@@ -1,0 +1,64 @@
+@use "global"as *;
+
+
+.p-workStyle-links {}
+
+.p-workStyle-links_link {
+  position: relative;
+  display: block;
+  width: rem(170);
+  padding: rem(50) rem(10) rem(20);
+  max-width: 100%;
+  background-color: $yellow;
+}
+
+.p-workStyle-links_link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: calc(100% - rem(10));
+  max-width: 100%;
+  height: calc(100% - rem(10));
+  border: 0.88px solid $black;
+}
+
+.p-workStyle-links_link span {
+  display:block;
+  text-align: center;
+}
+
+.p-workStyle-links_link-text {
+  position: relative;
+  font-size: rem(16);
+  font-weight: bold;
+  line-height: 1.75;
+}
+
+.p-workStyle-links_link-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: rem(-1);
+  width: 100%;
+  height: rem(1.69);
+  background-color: $black;
+}
+
+.p-workStyle-links_link-subText {
+  font-size: rem(10);
+  line-height: 1.75;
+}
+
+.p-workStyle-links_link-arrow {
+  width: rem(15);
+  height: rem(15);
+  margin: 0 auto;
+  border: 0;
+  border-top: solid 2px $black;
+  border-right: solid 2px $black;
+  transform: rotate(135deg); 
+  margin-top: rem(28.5);
+}

@@ -1,0 +1,49 @@
+@use 'global'as *;
+
+.p-subMV {
+	position: relative;
+	width: 100%;
+	height: rem(375);
+	background: url(../images/environment/environment_subMV_01.jpg) no-repeat center;
+	background-size: cover;
+
+	@include mq('md') {
+		background-image: url(../images/environment/environment_subMV_01_pc.jpg);
+	}
+}
+
+.p-subMV::after {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+content:' ';
+width: 100%;
+height: 100%;
+background: #000;
+opacity: 0.4;
+}
+
+.p-subMV__text {
+	position: absolute;
+	z-index: 3;
+	top: 50%;
+	width: 100%;
+	color: $white;
+	text-align: center;
+	font-family: $en-font;
+	font-size: rem(45);
+	line-height: 1;
+	text-transform: uppercase;
+	transform: translateY(-50%);
+}
+
+.p-subMV__text::before {
+	content: attr(data-ja);
+	display: inline-block;
+	width: 100%;
+	color: $white;
+	font-size: rem(14);
+	line-height:1;
+}
