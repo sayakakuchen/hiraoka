@@ -68,12 +68,19 @@
   }
 }
 
-.p-workStyle__unit + .p-workStyle__unit {
-  margin-top: rem(43);
+.p-workStyle__unit+.p-workStyle__unit {
+  margin-top: rem(27.5);
+
+  @include mq('md') {
+    margin-top: rem(43);
+  }
 }
 
 .p-workStyle__unit:nth-child(even) {
-  margin-left: 0;
+
+  @include mq('md') {
+    margin-left: 0;
+  }
 }
 
 .p-workStyle__unit img {
@@ -117,12 +124,18 @@
 }
 
 .p-workStyle__unit:nth-child(even) .p-workStyle__unitTitle {
-  justify-content: end;
-  text-align: right;
+  @include mq('md') {
+    justify-content: end;
+    text-align: right;
+  }
 }
 
+
 .p-workStyle__unit:nth-child(even) .p-workStyle__unitTitle::before {
-  order: 2;
+
+  @include mq('md') {
+    order: 2;
+  }
 }
 
 .p-workStyle__unitTitle::before {
@@ -156,4 +169,24 @@
 
 .p-workStyle__unitText span {
   background-color: $yellow;
+}
+
+.p-workStyle__calendarHeader {
+  text-align: center;
+}
+
+.p-workStyle__subtitle {
+  display: inline-block;
+  background-color: $yellow;
+  padding: 0 rem(4.4);
+  font-size: rem(18.72);
+  line-height: 1.75;
+
+  @include mq('md') {
+    font-size: rem(26);
+  }
+}
+
+.p-workStyle__calendarContents {
+  
 }
