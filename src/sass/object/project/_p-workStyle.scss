@@ -122,19 +122,16 @@
   }
 }
 
-.p-history__date::after {
-  background-color: #216F00;
-  border-radius: 50%;
-  bottom: -8.5px;
-  bottom: -0.53125rem;
-  content: "";
-  height: 17px;
-  height: 1.0625rem;
-  left: -8.5px;
-  left: -0.53125rem;
+.p-history__date::before {
+  content: attr(data-time);
   position: absolute;
-  width: 17px;
-  width: 1.0625rem;
+  width: rem(72);
+  height: rem(72);
+  border-radius: 50%;
+  background-color: $yellow;
+  top: 0;
+  left: 0;
+
 
   @include mq('md') {
     bottom: -0.3125rem;
