@@ -2,15 +2,15 @@
 
 .p-workStyle__section-header {
   width: 100%;
-  text-align: center;
-  background-color: #F4F4E2;
   padding: rem(17.5) 0;
+  background-color: #F4F4E2;
+  text-align: center;
 }
 
 .p-workStyle__title {
   position: relative;
-  font-size: rem(26);
   line-height: 1.75;
+  font-size: rem(26);
   font-weight: bold;
 }
 
@@ -18,85 +18,64 @@
   content: '';
   display: block;
   position: absolute;
-  position: absolute;
   left: 50%;
-  transform: translateX(-50%);
   bottom: rem(-1);
+  transform: translateX(-50%);
   width: rem(269.2895);
   height: rem(1.795);
   background-color: $black;
 }
 
 .p-workStyle__subtitle {
+  padding-top: rem(10);
   font-size: rem(17.5);
   line-height: 1.75;
-  padding-top: rem(10);
 }
 
-
-
-//とりあえずコピペ
-
-.p-history__main {
-  color: #000;
-  line-height: 1;
-  position: relative;
-}
-
-.p-history__units {
-  color: #000;
-  line-height: 1;
-  margin-top: 2.375rem;
-  padding-bottom: 5.625rem;
+.p-workStyle__units {
   position: relative;
   margin-left: calc(50% - 50vw);
   width: 100vw;
 
   @include mq('md') {
-    margin-top: 38px;
-    margin-top: 2.375rem;
-    padding-bottom: 90px;
-    padding-bottom: 5.625rem;
     width: 100%;
   }
 }
 
-.p-history__units::before {
-  background-color: $yellow;
+.p-workStyle__units::before {
   content: "";
-  height: 100%;
-  left: 9%;
   position: absolute;
   top: 0;
-  width:rem(1.44);
+  left: 9%;
+  height: 100%;
+  width: rem(1.44);
+  background-color: $yellow;
   transform: translate(0, 0);
 
   @include mq('md') {
     left: 50%;
-    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 }
 
-.p-history__unit {
+.p-workStyle__unit {
   position: relative;
-  margin-left: auto;
   width: 100%;
+  margin-left: auto;
 
   @include mq('md') {
-    margin-left: auto;
     width: 50%;
   }
 }
 
-.p-history__unit img {
+.p-workStyle__unit img {
   position: absolute;
+  top: 0;
+  left: calc(9% - rem(36));
   width: rem(72);
   height: rem(72);
   border-radius: 50%;
   background-color: $yellow;
-  top: 0;
-  left: calc(9% - rem(36));
 
   @include mq('md') {
     bottom: -0.3125rem;
@@ -106,54 +85,44 @@
   }
 }
 
-.p-history__unit:nth-child(even) {
+.p-workStyle__unit:nth-child(even) {
   margin-left: 0;
 }
 
-// .p-history__description {
-//   display: flex;
-// }
-
-.p-history__date {
-  line-height: 1;
-  margin: 0;
-  color: $black;
-  font-weight: bold;
-  padding: rem(27.5) 0 0 rem(78);
-  // position: relative;
+.p-workStyle__unitTitle {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  padding: rem(27.5) 0 0 rem(78);
+  margin: 0;
+  color: $black;
+  line-height: 1;
+  font-weight: bold;
   font-size: 1.25rem;
 
 }
 
-.p-history__date::before {
-  background: url(../images/environment/workStyle_dotline.png) no-repeat center;
-  background-size: cover;
+.p-workStyle__unitTitle::before {
+  content: "";
   display: inline-block;
   bottom: 0;
-  content: "";
-  // left: 0;
-  // position: absolute;
   width: rem(30);
   height: rem(4.5);
   margin-right: rem(7.35);
-
+  background: url(../images/environment/workStyle_dotline.png) no-repeat center;
+  background-size: cover;
 
   @include mq('md') {
-    left: 0;
     width: 100%;
-
+    left: 0;
   }
 }
 
 
-
-.p-history__text {
+.p-workStyle__unitText {
+  margin-top: rem(5);
+  padding: 0 0 0 rem(78 + 30 + 7.35);
   margin: 0;
   line-height: 1.5;
   font-size: 1rem;
-  margin-top: rem(5);
-  padding: 0 0 0 rem(78 + 30 + 7.35);
 }
