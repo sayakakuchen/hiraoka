@@ -23,10 +23,18 @@
 
 }
 
-.p-workStyleLinks__link:not(:nth-child(4n)) {
+.p-workStyleLinks__link:not(:nth-child(2n)) {
   margin-right: rem(15);
+
+  @include mq('md') {
+    margin-right: initial;
+  }
+
+}
+.p-workStyleLinks__link:not(:nth-child(4n)) {
 
   @include mq('md') {
     margin-right: rem(45);
     }
 }
+

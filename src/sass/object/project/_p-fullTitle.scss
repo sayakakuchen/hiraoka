@@ -8,8 +8,8 @@
   text-align: center;
 
   @include mq('md') {
-    width: 100%;
-    margin: initial;
+    max-width: rem(1500);
+    margin: 0 auto;
   }
 }
 

@@ -1,9 +1,37 @@
 @use "global"as *;
 
+.p-yellowLineCards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .p-yellowLinecards__card {
   width: 100%;
+
+  @include mq('md') {
+    width: calc(25% - rem(80) * 3 /4);
+    max-width: 100%;
+  }
 }
 
 .p-yellowLinecards__card+.p-yellowLinecards__card {
   margin-top: rem(60);
+
+  @include mq('md') {
+    margin-top: rem(100);
+  }
+}
+
+.p-yellowLinecards__card {
+  @include mq('md') {
+    margin-top: rem(100);
+  }
+}
+
+.p-yellowLinecards__card:not(:nth-child(4n)) {
+
+  @include mq('md') {
+    margin-right: rem(80);
+  }
+
 }

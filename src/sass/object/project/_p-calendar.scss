@@ -7,6 +7,10 @@
 
 .p-calendar__contents {
   margin-top: rem(35);
+
+  @include mq('md') {
+    margin-top: rem(50);
+  }
 }
 
 .p-calendar__calendarImg {
@@ -23,6 +27,10 @@
   margin-top: rem(15);
   display: flex;
   align-items: center;
+
+  @include mq('md') {
+  margin-top: rem(20);
+  }
 }
 
 .p-calendar__description-term::before {}
@@ -63,19 +71,5 @@
   @include mq('md') {
     font-size: rem(14);
     line-height: 2.5714;
-  }
-}
-
-.p-workStyle__points {
-  margin-top: rem(50);
-}
-
-.p-workStyle__pointsText {
-  margin-top: rem(25);
-  font-size: rem(15);
-  line-height: 2;
-
-  @include mq('md') {
-    font-size: rem(17.85);
   }
 }

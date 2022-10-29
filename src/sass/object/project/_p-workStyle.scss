@@ -2,7 +2,7 @@
 
 
 .p-workStyle__inner {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   margin: 0 auto;
   max-width: rem(540); //状況によって変える必要があるかも
   width: 100%;
@@ -24,6 +24,7 @@
   margin-top: rem(50);
 
   @include mq('md') {
+    margin-top: rem(100);
     width: 100%;
   }
 }
@@ -159,6 +160,19 @@
 
 .p-workStyle__calendar {
   margin-top: rem(75);
+
+  @include mq('md') {
+    margin-top: rem(100);
+  }
+}
+
+.p-workStyle__points {
+  margin-top: rem(50);
+
+  @include mq('md') {
+    max-width: rem(800);
+    margin: rem(70) auto 0;
+  }
 }
 
 .p-workStyle__pointsTitle {
@@ -166,10 +180,11 @@
 }
 
 .p-workStyle__pointsText {
+  margin-top: rem(25);
   font-size: rem(15);
   line-height: 2;
 
   @include mq('md') {
-    font-size: rem(18);
+    font-size: rem(17.85);
   }
 }

@@ -18,6 +18,10 @@
 
 .p-environmentMerit__yellowLineCards {
   margin-top: rem(67);
+
+  @include mq('md') {
+    margin-top: rem(100);
+  }
 }
 
 // .p-environmentMerit__cards {
