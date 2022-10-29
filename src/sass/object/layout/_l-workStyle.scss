@@ -2,5 +2,8 @@
 
 .l-workStyle {
   margin-top: rem(25);
-  
+}
+
+.l-workStyle + .l-workStyle {
+  margin-top: rem(100);
 }

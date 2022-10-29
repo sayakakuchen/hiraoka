@@ -3,7 +3,7 @@
 .p-fullTitle {
   width: 100vw;
   padding: rem(17.5) rem(25);
-  margin-left: calc(50% - 50vw);
+  margin: 0 calc(50% - 50vw);
   background-color: #F4F4E2;
   text-align: center;
 
@@ -33,6 +33,7 @@
 }
 
 .p-fullTitle__sub {
+  padding-top: rem(10);
   font-size: rem(17.5);
   line-height: 1.75;
 

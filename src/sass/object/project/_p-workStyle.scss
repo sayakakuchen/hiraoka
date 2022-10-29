@@ -4,26 +4,24 @@
 .p-workStyle__inner {
   overflow-x: hidden;
   margin: 0 auto;
-	max-width: rem(540); //状況によって変える必要があるかも
-	width: 100%;
-	height: inherit;
-	padding-right: $padding-sp;
-	padding-left: $padding-sp;
-	@include mq(md) {
-		max-width: 1200px + strip-unit($padding-pc) * 2;
-		padding-right: $padding-pc;
-		padding-left: $padding-pc;
-	}
+  max-width: rem(540); //状況によって変える必要があるかも
+  width: 100%;
+  height: inherit;
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+
+  @include mq(md) {
+    max-width: 1200px + strip-unit($padding-pc) * 2;
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+  }
 }
 
-.p-workStyle__section-header {
-  
-}
+.p-workStyle__section-header {}
 
 .p-workStyle__units {
   position: relative;
-  // margin-left: calc(50% - 50vw);
-  // width: 100vw;
+  margin-top: rem(50);
 
   @include mq('md') {
     width: 100%;
@@ -57,7 +55,7 @@
 }
 
 .p-workStyle__unit+.p-workStyle__unit {
-  margin-top: rem(27.5);
+  margin-top: rem(36);
 
   @include mq('md') {
     margin-top: rem(43);
@@ -159,66 +157,8 @@
   background-color: $yellow;
 }
 
-.p-calendar__titleWrapper {
-  text-align: center;
-}
-
-.p-yellowTitle {
-  display: inline-block;
-  background-color: $yellow;
-  padding: 0 rem(4.4);
-  font-size: rem(18.72);
-  line-height: 1.75;
-
-  @include mq('md') {
-    font-size: rem(26);
-  }
-}
-
-.p-calendar__description {
-  display: flex;
-  align-items: center;
-}
-
-.p-calendar__description-term::before {}
-
-.p-calendar__description-icon {
-  display: block;
-  // width: rem(12.5);
-  // height: rem(12.5);
-  padding: rem(7) rem(7);
-  border-radius: 50%;
-  background-color: #02B5FD;
-  margin-right: rem(2);
-}
-
-
-.p-calendar__description-icon img {
-  width: rem(12.5);
-  height: rem(12.5);
-  max-width: initial;
-  fill: #fff;
-}
-
-.p-calendar__description-term {
-  color: #02B5FD;
-  font-size: rem(14);
-  font-weight: bold;
-  line-height: 1.60714;
-}
-
-.p-calendar__description-term::after {
-  content: '・・';
-}
-
-.p-calendar__description-text {
-  font-size: rem(12);
-  line-height: 1.5;
-
-  @include mq('md') {
-    font-size: rem(14);
-    line-height: 2.5714;
-  }
+.p-workStyle__calendar {
+  margin-top: rem(75);
 }
 
 .p-workStyle__pointsTitle {
