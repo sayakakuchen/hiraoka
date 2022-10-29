@@ -1,20 +1,20 @@
 @use "global"as *;
 
-.c-fullTitle {
+.p-fullTitle {
   width: 100%;
   padding: rem(17.5) 0;
   background-color: #F4F4E2;
   text-align: center;
 }
 
-.c-fullTitle__main {
+.p-fullTitle__main {
   position: relative;
   line-height: 1.75;
   font-size: rem(26);
   font-weight: bold;
 }
 
-.c-fullTitle__main::after {
+.p-fullTitle__main::after {
   content: '';
   display: block;
   position: absolute;
@@ -26,7 +26,7 @@
   background-color: $black;
 }
 
-.c-fullTitle__sub {
+.p-fullTitle__sub {
   font-size: rem(17.5);
   line-height: 1.75;
 
