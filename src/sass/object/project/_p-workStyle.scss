@@ -105,6 +105,7 @@
   font-size: rem(17);
 
   @include mq('md') {
+    padding: 0;
     line-height: 1.75;
     font-size: rem(24);
   }
@@ -151,13 +152,14 @@
 
   @include mq('md') {
     font-size: rem(18);
+    margin-top: rem(15);
   }
 }
 
 .p-workStyle__unitText span {
   background-color: $yellow;
 }
-
+.p-workStyle__unit:nth-child(even)
 .p-workStyle__calendar {
   margin-top: rem(75);
 
@@ -165,6 +167,11 @@
     margin-top: rem(100);
   }
 }
+
+.p-workStyle__unit:nth-child(even) .p-workStyle__unitText {
+  padding: 0;
+}
+
 
 .p-workStyle__points {
   margin-top: rem(50);
