@@ -10,7 +10,7 @@
   background-color: $yellow;
 
   @include mq('md') {
-    width: rem(340);
+    // width: rem(340);
     padding: rem(100) rem(20) rem(40);
   }
 }
