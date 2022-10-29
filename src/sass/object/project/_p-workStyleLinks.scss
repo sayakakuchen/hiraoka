@@ -1,7 +1,8 @@
 @use "global"as *;
 
 
-.p-workStyle-links_link {
+
+.p-workStyleLink {
   position: relative;
   display: block;
   width: rem(170);
@@ -15,7 +16,7 @@
   }
 }
 
-.p-workStyle-links_link::before {
+.p-workStyleLink::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -32,12 +33,12 @@
   }
 }
 
-.p-workStyle-links_link span {
-  display:block;
+.p-workStyleLink span {
+  display: block;
   text-align: center;
 }
 
-.p-workStyle-links_link-text {
+.p-workStyleLink__text {
   position: relative;
   font-size: rem(16);
   font-weight: bold;
@@ -48,7 +49,7 @@
   }
 }
 
-.p-workStyle-links_link-text::after {
+.p-workStyleLink__text::after {
   content: '';
   position: absolute;
   left: 0;
@@ -63,7 +64,7 @@
   }
 }
 
-.p-workStyle-links_link-subText {
+.p-workStyleLink__subText {
   font-size: rem(10);
   line-height: 1.75;
 
@@ -72,13 +73,13 @@
   }
 }
 
-.p-workStyle-links_link-arrow {
+.p-workStyleLink__arrow {
   width: rem(15);
   height: rem(15);
   margin: 0 auto;
   border: 0;
   border-top: solid 2px $black;
   border-right: solid 2px $black;
-  transform: rotate(135deg); 
+  transform: rotate(135deg);
   margin-top: rem(28.5);
 }
