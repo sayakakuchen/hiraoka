@@ -6,8 +6,8 @@
   max-width: rem(540); //状況によって変える必要があるかも
   width: 100%;
   height: inherit;
-  padding-right: $padding-sp;
-  padding-left: $padding-sp;
+  padding-right: 47.5px;
+  padding-left: 47.5px;
 
   @include mq(md) {
     max-width: 1500px + strip-unit($padding-pc) * 2;

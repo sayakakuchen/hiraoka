@@ -1,0 +1,9 @@
+@use "global"as *;
+
+.p-yellowLinecards__card {
+  width: 100%;
+}
+
+.p-yellowLinecards__card+.p-yellowLinecards__card {
+  margin-top: rem(60);
+}
