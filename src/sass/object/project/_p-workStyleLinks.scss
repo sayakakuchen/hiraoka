@@ -1,5 +1,20 @@
 @use "global"as *;
 
+.p-workStyleLinks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .p-workStyleLinks__link {
-  
+
+}
+
+.p-workStyleLinks__link {
+  width: calc(50% - rem() * 1 / 2);
+  max-width: 100%;
+
+}
+
+.p-workStyleLinks__link:not(:nth-child(2n)) {
+  margin-right: rem(30);
 }
