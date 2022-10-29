@@ -1,20 +1,20 @@
 @use "global"as *;
 
-.p-workStyle__section-header {
+.c-fullTitle {
   width: 100%;
   padding: rem(17.5) 0;
   background-color: #F4F4E2;
   text-align: center;
 }
 
-.p-workStyle__title {
+.c-fullTitle__main {
   position: relative;
   line-height: 1.75;
   font-size: rem(26);
   font-weight: bold;
 }
 
-.p-workStyle__title::after {
+.c-fullTitle__main::after {
   content: '';
   display: block;
   position: absolute;
@@ -26,12 +26,12 @@
   background-color: $black;
 }
 
-.p-workStyle__subtitle {
+.c-fullTitle__sub {
   font-size: rem(17.5);
   line-height: 1.75;
-  
+
   @include mq('md') {
-  font-size: rem(20);
+    font-size: rem(20);
   }
 }
 
@@ -221,28 +221,30 @@
   font-weight: bold;
   line-height: 1.60714;
 }
+
 .p-calendar__description-term::after {
   content: '・・';
 }
+
 .p-calendar__description-text {
   font-size: rem(12);
   line-height: 1.5;
-  
+
   @include mq('md') {
-  font-size: rem(14);
-  line-height: 2.5714;
+    font-size: rem(14);
+    line-height: 2.5714;
   }
 }
 
-.p-workStyle__titleWrapper {
+.p-workStyle__pointsTitle {
   text-align: center;
 }
 
 .p-workStyle__pointsText {
   font-size: rem(15);
   line-height: 2;
-  
+
   @include mq('md') {
-  font-size: rem(18);
+    font-size: rem(18);
   }
 }
