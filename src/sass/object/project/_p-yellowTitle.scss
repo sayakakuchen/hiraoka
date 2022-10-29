@@ -1,0 +1,12 @@
+
+@use "global"as *;
+
+.p-yellowTitle {
+  padding-top: rem(10);
+  font-size: rem(17.5);
+  line-height: 1.75;
+}
+
+.p-yellowTitle--en {
+  text-transform: uppercase;
+}
