@@ -4,6 +4,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: rem(-15);
+
+  @include mq('md') {
+  margin-top: 0;
+  }
 }
 
 .p-workStyleLinks__link {
@@ -11,8 +15,18 @@
   max-width: 100%;
   margin-top: rem(15);
 
+  @include mq('md') {
+    width: calc(25% - rem(45) * 3 /4);
+    max-width: 100%;
+    margin-top: 0;
+  }
+
 }
 
-.p-workStyleLinks__link:not(:nth-child(2n)) {
+.p-workStyleLinks__link:not(:nth-child(4n)) {
   margin-right: rem(15);
+
+  @include mq('md') {
+    margin-right: rem(45);
+    }
 }
