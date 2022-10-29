@@ -1,10 +1,16 @@
 @use "global"as *;
 
 .p-fullTitle {
-  width: 100%;
-  padding: rem(17.5) 0;
+  width: 100vw;
+  padding: rem(17.5) rem(25);
+  margin-left: calc(50% - 50vw);
   background-color: #F4F4E2;
   text-align: center;
+
+  @include mq('md') {
+    width: 100%;
+    margin: initial;
+  }
 }
 
 .p-fullTitle__main {

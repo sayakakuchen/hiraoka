@@ -1,6 +1,8 @@
 @use "global"as *;
 
+
 .p-workStyle__inner {
+  overflow-x: hidden;
   margin: 0 auto;
 	max-width: rem(540); //状況によって変える必要があるかも
 	width: 100%;
@@ -14,10 +16,14 @@
 	}
 }
 
+.p-workStyle__section-header {
+  
+}
+
 .p-workStyle__units {
   position: relative;
-  margin-left: calc(50% - 50vw);
-  width: 100vw;
+  // margin-left: calc(50% - 50vw);
+  // width: 100vw;
 
   @include mq('md') {
     width: 100%;
