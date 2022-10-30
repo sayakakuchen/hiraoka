@@ -4,6 +4,8 @@
 .p-workStyleLink {
   position: relative;
   display: block;
+  // display: flex; /* 追加 */
+  // flex-direction: column; /* 追加 */
   padding: rem(50) rem(10) rem(24.25);
   max-width: 100%;
   background-color: $yellow;
@@ -80,8 +82,10 @@
   text-align: center;
   transform: rotate(135deg);
   margin-top: rem(28.5);
+  // margin-top: auto;
 
   @include mq('md') {
     margin-top: rem(58);
+    // margin-top: auto;
   }
 }
