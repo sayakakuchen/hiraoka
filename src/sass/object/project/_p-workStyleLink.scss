@@ -43,7 +43,7 @@
   line-height: 1;
 
   @include mq('md') {
-    gap: rem(6.5);
+    gap: rem(13);
     font-size: rem(32);
   }
 }
@@ -73,15 +73,15 @@
 
 .p-workStyleLink__arrow {
   display: block;
-  width: rem(15);
-  height: rem(15);
+  width: rem(11);
+  height: rem(11);
   margin: 0 auto;
   border: 0;
   border-top: solid 2px $black;
   border-right: solid 2px $black;
   text-align: center;
   transform: rotate(135deg);
-  margin-top: rem(28.5);
+  margin-top: rem(19.5);
   // margin-top: auto;
 
   @include mq('md') {

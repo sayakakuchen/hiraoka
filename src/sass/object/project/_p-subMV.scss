@@ -3,7 +3,7 @@
 .p-subMV {
 	position: relative;
 	width: 100%;
-	height: rem(375);
+	height: rem(312.5);
 	background: url(../images/environment/environment_subMV_01.jpg) no-repeat center;
 	background-size: cover;
 
@@ -29,7 +29,7 @@ opacity: 0.4;
 .p-subMV__text {
 	position: absolute;
 	z-index: 3;
-	top: 50%;
+	top: 38%;
 	width: 100%;
 	color: $white;
 	text-align: center;

@@ -5,9 +5,9 @@
 .p-yellowTitle {
   display: inline-block;
   background-color: $yellow;
-  padding: 0 rem(4.4);
+  padding: 0 rem(17.4);
   font-size: rem(18.72);
-  line-height: 1.75;
+  line-height: 1;
 
   @include mq('md') {
     font-size: rem(26);
