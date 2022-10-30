@@ -51,6 +51,11 @@
   height: rem(12.5);
   max-width: initial;
   fill: #fff;
+
+  @include mq('md') {
+    width: rem(19.7051);
+    height: rem(17.5781);
+  }
 }
 
 .p-calendar__description-term {
