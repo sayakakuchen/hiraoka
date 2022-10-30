@@ -29,7 +29,7 @@
 .p-workStyle__unit {
   position: relative;
   width: 100%;
-  min-height: rem(80);
+  min-height: rem(96);
   margin-left: auto;
 
   @include mq('md') {
@@ -42,7 +42,7 @@
   position: absolute;
   top: 0;
   left: rem(36);
-  height: 100%;
+  height: calc(100% - #{rem(35)});
   width: rem(1.44);
   background-color: $yellow;
   transform: translate(0, 0);
@@ -187,7 +187,7 @@
 }
 
 .p-workStyle__calendar {
-  margin-top: rem(73);
+  margin-top: rem(62);
 
   @include mq('md') {
     margin-top: rem(100);
