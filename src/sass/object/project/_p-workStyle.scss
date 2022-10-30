@@ -95,8 +95,8 @@
 }
 
 .p-workStyle__unitTitle {
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
+  justify-content: start;
   align-items: center;
   padding: rem(27.5) 0 0 rem(78);
   margin: 0;
@@ -105,16 +105,17 @@
   font-size: rem(17);
 
   @include mq('md') {
-    padding: 0;
+    padding: 0 0 0 rem(68);
     line-height: 1.75;
     font-size: rem(24);
   }
 }
 
 .p-workStyle__unit:nth-child(even) .p-workStyle__unitTitle {
+
   @include mq('md') {
+    padding: 0 rem(68) 0 0;
     justify-content: end;
-    text-align: right;
   }
 }
 
@@ -171,7 +172,7 @@
 .p-workStyle__unit:nth-child(even) .p-workStyle__unitText {
 
   @include mq('md') {
-    padding: 0;
+    padding: 0 rem(203) 0 0;
   }
 }
 
