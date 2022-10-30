@@ -29,11 +29,21 @@
   }
 }
 
+.p-workStyle__unit {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+
+  @include mq('md') {
+    width: 50%;
+  }
+}
+
 .p-workStyle__units::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 9%;
+  left: rem(36);
   height: 100%;
   width: rem(1.44);
   background-color: $yellow;
@@ -42,16 +52,6 @@
   @include mq('md') {
     left: 50%;
     transform: translateX(-50%);
-  }
-}
-
-.p-workStyle__unit {
-  position: relative;
-  width: 100%;
-  margin-left: auto;
-
-  @include mq('md') {
-    width: 50%;
   }
 }
 
@@ -73,7 +73,8 @@
 .p-workStyle__unit img {
   position: absolute;
   top: 0;
-  left: calc(9% - rem(36));
+  // left: calc(9% - rem(36));
+  left: 0;
   width: rem(72);
   height: rem(72);
   border-radius: 50%;
