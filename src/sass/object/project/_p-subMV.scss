@@ -40,6 +40,7 @@ opacity: 0.4;
 	transform: translateY(-50%);
 
 	@include mq('md') {
+		top: 42%;
 		font-size: rem(80);
 	}
 }
