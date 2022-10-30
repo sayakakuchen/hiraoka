@@ -169,7 +169,10 @@
 }
 
 .p-workStyle__unit:nth-child(even) .p-workStyle__unitText {
-  padding: 0;
+
+  @include mq('md') {
+    padding: 0;
+  }
 }
 
 

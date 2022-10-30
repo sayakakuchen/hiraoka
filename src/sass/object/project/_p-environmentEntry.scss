@@ -3,9 +3,11 @@
 .p-environmentEntry__inner {
 
   @include mq(md) {
+    width: 100%;
     max-width: 1500px + strip-unit($padding-pc) * 2;
     padding-right: $padding-pc;
     padding-left: $padding-pc;
+    margin: 0 auto;
   }
 }
 
