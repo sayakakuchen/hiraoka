@@ -15,7 +15,7 @@
 }
 
 .p-yellowLinecards__card+.p-yellowLinecards__card {
-  margin-top: rem(60);
+  margin-top: rem(50);
 
   @include mq('md') {
     margin-top: rem(100);
