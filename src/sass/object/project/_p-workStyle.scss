@@ -43,6 +43,7 @@
 
   @include mq('md') {
     width: 50%;
+    min-height: rem(114);
   }
 }
 
@@ -66,7 +67,7 @@
   margin-top: rem(9);
 
   @include mq('md') {
-    margin-top: rem(43);
+    margin-top: rem(21);
   }
 }
 
@@ -74,9 +75,9 @@
   margin-top: rem(0);
 }
 
-.p-workStyle__units:nth-child(1) .p-workStyle__unit:nth-of-type(3) {
-  margin-top: rem(1);
-}
+// .p-workStyle__units:nth-child(1) .p-workStyle__unit:nth-of-type(3) {
+//   margin-top: rem(1);
+// }
 
 // .p-workStyle__unit:nth-of-type(3) {
 //   margin-top: rem(-6);
@@ -151,7 +152,7 @@
 .p-workStyle__unit:nth-child(even) .p-workStyle__unitTitle {
 
   @include mq('md') {
-    padding: 0 rem(68) 0 0;
+    padding: rem(21) rem(84) 0 0;
     justify-content: end;
   }
 }
@@ -187,7 +188,7 @@
 
   @include mq('md') {
     font-size: rem(18);
-    margin-top: rem(15);
+    padding: 0 0 0 rem(193);
   }
 }
 

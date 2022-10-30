@@ -26,10 +26,10 @@
 .p-calendar__description {
   display: flex;
   align-items: start;
-  margin-top: rem(17);
+  margin-top: rem(15);
 
   @include mq('md') {
-  margin-top: rem(20);
+    margin-left: rem(36);
   }
 }
 
@@ -43,6 +43,7 @@
 
   @include mq('md') {
     max-width: rem(30);
+    padding: rem(7) rem(7);
   }
 }
 
@@ -67,6 +68,7 @@
 
   @include mq('md') {
     min-width: rem(64);
+    font-size: rem(16);
   }
 }
 
