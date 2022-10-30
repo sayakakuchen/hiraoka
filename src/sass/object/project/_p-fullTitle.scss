@@ -10,6 +10,7 @@
   @include mq('md') {
     width: 100%;
     max-width: calc(#{rem(1500)} + 25 * 2);
+    padding: rem(32) rem(25);
     margin: 0 auto;
   }
 }
@@ -22,6 +23,10 @@
   line-height: 1.75;
   font-size: rem(26);
   font-weight: bold;
+
+  @include mq('md') {
+    font-size: rem(30);
+  }
 }
 
 .p-fullTitle__main::after {
@@ -31,6 +36,11 @@
   width: rem(269.2895);
   height: rem(1.795);
   background-color: $black;
+
+  @include mq('md') {
+    width: rem(340);
+    height: rem(2);
+  }
 }
 
 .p-fullTitle__sub {

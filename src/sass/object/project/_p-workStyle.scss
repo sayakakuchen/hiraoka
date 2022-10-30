@@ -10,11 +10,20 @@
   padding-left: $padding-sp;
 
   @include mq(md) {
-    max-width: 1200px + strip-unit($padding-pc) * 2;
+    max-width: 1500px + strip-unit($padding-pc) * 2;
     padding-right: $padding-pc;
     padding-left: $padding-pc;
   }
 }
+
+.p-workStyle__contents {
+
+  @include mq(md) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 
 .p-workStyle__units {
   position: relative;
@@ -133,7 +142,7 @@
   font-size: rem(17);
 
   @include mq('md') {
-    padding: 0 0 0 rem(68);
+    padding: rem(22) 0 0 rem(82);
     line-height: 1.75;
     font-size: rem(24);
   }
