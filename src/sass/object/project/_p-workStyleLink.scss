@@ -11,7 +11,7 @@
 
   @include mq('md') {
     // width: rem(340);
-    padding: rem(100) rem(20) rem(40);
+    padding: rem(104) rem(30) rem(47);
   }
 }
 
@@ -32,28 +32,25 @@
   }
 }
 
-.p-workStyleLink span {
-  display: block;
-  text-align: center;
-}
-
 .p-workStyleLink__text {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: rem(8.5);
   font-size: rem(16);
   font-weight: bold;
-  line-height: 1.75;
+  line-height: 1;
 
   @include mq('md') {
+    gap: rem(6.5);
     font-size: rem(32);
   }
 }
 
 .p-workStyleLink__text::after {
   content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: rem(-1);
+  display: inline-block;
   width: 100%;
   height: rem(1.69);
   background-color: $black;
@@ -64,6 +61,8 @@
 }
 
 .p-workStyleLink__subText {
+  display: block;
+  text-align: center;
   font-size: rem(10);
   line-height: 1.75;
 
@@ -73,6 +72,8 @@
 }
 
 .p-workStyleLink__arrow {
+  display: block;
+  text-align: center;
   width: rem(15);
   height: rem(15);
   margin: 0 auto;
@@ -81,4 +82,8 @@
   border-right: solid 2px $black;
   transform: rotate(135deg);
   margin-top: rem(28.5);
+
+  @include mq('md') {
+    margin-top: rem(58);
+  }
 }
