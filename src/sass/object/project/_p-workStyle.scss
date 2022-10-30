@@ -29,6 +29,7 @@
 .p-workStyle__unit {
   position: relative;
   width: 100%;
+  min-height: rem(80);
   margin-left: auto;
 
   @include mq('md') {
@@ -53,20 +54,43 @@
 }
 
 .p-workStyle__unit+.p-workStyle__unit {
-  margin-top: rem(28);
+  margin-top: rem(9);
 
   @include mq('md') {
     margin-top: rem(43);
   }
 }
 
-.p-workStyle__unit:nth-of-type(3) {
-  margin-top: rem(-6);
-
-  @include mq('md') {
-    margin-top: rem(43);
-  }
+.p-workStyle__unit+.p-workStyle__unit.u-marginTop0 {
+  margin-top: rem(0);
 }
+
+.p-workStyle__units:nth-child(1) .p-workStyle__unit:nth-of-type(3) {
+  margin-top: rem(1);
+}
+
+// .p-workStyle__unit:nth-of-type(3) {
+//   margin-top: rem(-6);
+
+//   @include mq('md') {
+//     margin-top: rem(43);
+//   }
+// }
+
+// .p-workStyle__unit:nth-of-type(4) {
+//   margin-top: rem(10);
+
+//   @include mq('md') {
+//     margin-top: rem(43);
+//   }
+// }
+// p-workStyle__unit:nth-of-type(4) {
+//   margin-top: rem(29);
+
+//   @include mq('md') {
+//     margin-top: rem(43);
+//   }
+// }
 
 .p-workStyle__unit:nth-child(even) {
 
