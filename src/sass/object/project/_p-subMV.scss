@@ -8,6 +8,7 @@
 	background-size: cover;
 
 	@include mq('md') {
+		height: rem(600);
 		background-image: url(../images/environment/environment_subMV_01_pc.jpg);
 	}
 }
@@ -37,6 +38,10 @@ opacity: 0.4;
 	line-height: 1;
 	text-transform: uppercase;
 	transform: translateY(-50%);
+
+	@include mq('md') {
+		font-size: rem(80);
+	}
 }
 
 .p-subMV__text::before {
@@ -46,4 +51,8 @@ opacity: 0.4;
 	color: $white;
 	font-size: rem(14);
 	line-height:1;
+
+	@include mq('md') {
+		font-size: rem(22);
+	}
 }
