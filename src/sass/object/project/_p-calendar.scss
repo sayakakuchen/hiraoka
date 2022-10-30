@@ -24,9 +24,9 @@
 }
 
 .p-calendar__description {
-  margin-top: rem(15);
   display: flex;
   align-items: center;
+  margin-top: rem(15);
 
   @include mq('md') {
   margin-top: rem(20);
@@ -77,7 +77,6 @@
 }
 
 .p-calendar__description-text {
-  // max-width: rem(231);
   font-size: rem(12);
   line-height: 1.5;
 

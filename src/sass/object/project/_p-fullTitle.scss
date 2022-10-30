@@ -15,7 +15,10 @@
 }
 
 .p-fullTitle__main {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   line-height: 1.75;
   font-size: rem(26);
   font-weight: bold;
@@ -23,11 +26,8 @@
 
 .p-fullTitle__main::after {
   content: '';
-  display: block;
-  position: absolute;
-  left: 50%;
-  bottom: rem(-1);
-  transform: translateX(-50%);
+  display: inline-block;
+  flex-shrink: 0;
   width: rem(269.2895);
   height: rem(1.795);
   background-color: $black;

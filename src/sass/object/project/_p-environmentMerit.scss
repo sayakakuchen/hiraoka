@@ -2,10 +2,10 @@
 
 .p-environmentMerit__inner {
   overflow-x: hidden;
-  margin: 0 auto;
-  max-width: rem(540); //状況によって変える必要があるかも
   width: 100%;
+  max-width: rem(540); //状況によって変える必要があるかも
   height: inherit;
+  margin: 0 auto;
   padding-right: 47.5px;
   padding-left: 47.5px;
 
@@ -23,8 +23,3 @@
     margin-top: rem(100);
   }
 }
-
-// .p-environmentMerit__cards {
-//   max-width: rem(280);
-//   margin: 0 auto;
-//   }

@@ -2,7 +2,6 @@
 
 
 .p-workStyle__inner {
-  // overflow-x: hidden;
   margin: 0 auto;
   max-width: rem(540); //状況によって変える必要があるかも
   width: 100%;
@@ -16,8 +15,6 @@
     padding-left: $padding-pc;
   }
 }
-
-.p-workStyle__section-header {}
 
 .p-workStyle__units {
   position: relative;
@@ -73,7 +70,6 @@
 .p-workStyle__unit img {
   position: absolute;
   top: 0;
-  // left: calc(9% - rem(36));
   left: 0;
   width: rem(72);
   height: rem(72);
@@ -83,7 +79,6 @@
   @include mq('md') {
     width: rem(100);
     height: rem(100);
-    // bottom: -0.3125rem;
     left: rem(-50);
   }
 }
@@ -120,7 +115,6 @@
   }
 }
 
-
 .p-workStyle__unit:nth-child(even) .p-workStyle__unitTitle::before {
 
   @include mq('md') {
@@ -131,8 +125,7 @@
 .p-workStyle__unitTitle::before {
   content: "";
   display: inline-block;
-  // flex-shrink: 0;
-  // bottom: 0;
+  flex-shrink: 0;
   width: rem(30);
   height: rem(4.5);
   margin-right: rem(7.35);
@@ -176,7 +169,6 @@
     padding: 0 rem(203) 0 0;
   }
 }
-
 
 .p-workStyle__points {
   margin-top: rem(50);

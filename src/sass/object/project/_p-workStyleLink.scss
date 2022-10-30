@@ -4,13 +4,11 @@
 .p-workStyleLink {
   position: relative;
   display: block;
-  // width: rem(170);
   padding: rem(50) rem(10) rem(24.25);
   max-width: 100%;
   background-color: $yellow;
 
   @include mq('md') {
-    // width: rem(340);
     padding: rem(104) rem(30) rem(47);
   }
 }
@@ -20,11 +18,11 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateY(-50%) translateX(-50%);
   width: calc(100% - rem(10));
   max-width: 100%;
   height: calc(100% - rem(10));
   border: 0.88px solid $black;
+  transform: translateY(-50%) translateX(-50%);
 
   @include mq('md') {
     width: calc(100% - rem(20));
@@ -73,13 +71,13 @@
 
 .p-workStyleLink__arrow {
   display: block;
-  text-align: center;
   width: rem(15);
   height: rem(15);
   margin: 0 auto;
   border: 0;
   border-top: solid 2px $black;
   border-right: solid 2px $black;
+  text-align: center;
   transform: rotate(135deg);
   margin-top: rem(28.5);
 
