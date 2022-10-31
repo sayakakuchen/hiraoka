@@ -1,11 +1,18 @@
 @use "global"as *;
 
+// .p-yellowLineCard {
+//   display: flex;
+//   flex-direction: column;
+// }
+
 .p-yellowLineCard__title {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  // align-self: stretch;
   gap: rem(21);
+  text-align: center;
   font-size: rem(24);
   line-height: 1.25;
 
