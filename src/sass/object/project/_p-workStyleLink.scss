@@ -6,7 +6,7 @@
   display: block;
   // display: flex; /* 追加 */
   // flex-direction: column; /* 追加 */
-  padding: rem(50) rem(10) rem(24.25);
+  padding: rem(50) rem(5) rem(24.25);
   max-width: 100%;
   background-color: $yellow;
 
@@ -52,7 +52,7 @@
 .p-workStyleLink__text::after {
   content: '';
   display: inline-block;
-  width: 100%;
+  width:calc(100% - #{rem(15)});
   height: rem(1.69);
   background-color: $black;
 

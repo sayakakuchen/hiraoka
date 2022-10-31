@@ -5,7 +5,7 @@
   @include mq('md') {
     display: flex;
     flex-wrap: wrap;
-    gap: rem(122) rem(80);
+    gap: rem(122) rem(79.99999);
   }
 }
 
@@ -13,7 +13,7 @@
   width: 100%;
 
   @include mq('md') {
-    width: calc(25% - rem(80) * 3 /4);
+    width: calc(24.99999% - rem(79.99999) * 3 /4);
     max-width: 100%;
   }
 }
