@@ -24,7 +24,6 @@
   }
 }
 
-
 .p-workStyle__units {
   position: relative;
   margin-top: rem(50);
@@ -74,33 +73,6 @@
 .p-workStyle__unit+.p-workStyle__unit.u-marginTop0 {
   margin-top: rem(0);
 }
-
-// .p-workStyle__units:nth-child(1) .p-workStyle__unit:nth-of-type(3) {
-//   margin-top: rem(1);
-// }
-
-// .p-workStyle__unit:nth-of-type(3) {
-//   margin-top: rem(-6);
-
-//   @include mq('md') {
-//     margin-top: rem(43);
-//   }
-// }
-
-// .p-workStyle__unit:nth-of-type(4) {
-//   margin-top: rem(10);
-
-//   @include mq('md') {
-//     margin-top: rem(43);
-//   }
-// }
-// p-workStyle__unit:nth-of-type(4) {
-//   margin-top: rem(29);
-
-//   @include mq('md') {
-//     margin-top: rem(43);
-//   }
-// }
 
 .p-workStyle__unit:nth-child(even) {
 
