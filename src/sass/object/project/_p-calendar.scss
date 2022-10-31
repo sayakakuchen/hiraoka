@@ -59,8 +59,13 @@
   }
 }
 
+// .p-calendar__description-wrapper {
+//   display: flex;
+//   align-items: start;
+// }
+
 .p-calendar__description-term {
-  min-width: rem(56);
+  min-width: rem(56.8);
   color: #02B5FD;
   font-size: rem(14);
   font-weight: bold;
@@ -77,12 +82,12 @@
 }
 
 .p-calendar__description-text {
-  padding-top: rem(15);
+  // padding-top: rem(15);
   font-size: rem(12);
   line-height: 1.5;
 
   @include mq('md') {
-    padding-top: rem(0);
+    // padding-top: rem(0);
     font-size: rem(14);
     line-height: 2.5714;
   }
