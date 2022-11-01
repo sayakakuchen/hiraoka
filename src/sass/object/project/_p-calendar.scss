@@ -39,9 +39,10 @@
 }
 
 .p-calendar__description-icon {
-  display: block;
-  // max-width: rem(31);
-  padding: rem(10) rem(10);
+  display: flex;
+  justify-content: center;
+  width: rem(30);
+  height: rem(30);
   border-radius: 50%;
   background-color: #02B5FD;
   margin-right: rem(2);
@@ -54,8 +55,8 @@
 
 
 .p-calendar__description-icon img {
-  width: rem(18);
-  height: rem(18);
+  width: rem(20);
+  height: rem(20);
   fill: #fff;
 
   @include mq('md') {
@@ -94,6 +95,5 @@
   @include mq('md') {
     // padding-top: rem(0);
     font-size: rem(14);
-    line-height: 2.5714;
   }
 }

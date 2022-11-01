@@ -13,10 +13,10 @@
 
 .p-workStyleLinks__link {
   width: calc(49.99999% - rem(15) * 1 / 2);
-  max-width: 100%;
+  // max-width: 100%;
 
   @include mq('md') {
     width: calc(24.99999% - rem(44) * 3 / 4);
-    max-width: 100%;
+    // max-width: 100%;
   }
 }

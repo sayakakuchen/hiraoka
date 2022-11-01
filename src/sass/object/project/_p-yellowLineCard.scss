@@ -2,41 +2,46 @@
 
 
 .p-yellowLineCard__title {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: rem(21);
   text-align: center;
   font-size: rem(24);
   line-height: 1.25;
+  height: 2.5em;
 
   @include mq('md') {
     font-size: rem(30);
-    gap: rem(37);
   }
 }
 
 .p-yellowLineCard__title::after {
+  position: absolute;
   content: '';
   display: inline-block;
   width: rem(250);
   height: rem(4);
   background-color: $yellow;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: rem(-21);
 
   @include mq('md') {
     width: rem(310);
+    bottom: rem(-24);
   }
 }
 
 .p-yellowLineCard__text {
-  padding-top: rem(16.5);
   font-size: rem(15);
   line-height: 1.86666;
+  margin-top: rem(42);
 
   @include mq('md') {
-    padding-top: rem(26);
     font-size: rem(20);
     line-height: 2;
+    margin-top: rem(52);
   }
 }
