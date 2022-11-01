@@ -4,26 +4,23 @@
 	position: relative;
 	width: 100%;
 	height: rem(312.5);
-	background: url(../images/environment/environment_subMV_01.jpg) no-repeat center;
-	background-size: cover;
 
 	@include mq('md') {
 		height: rem(600);
-		background-image: url(../images/environment/environment_subMV_01_pc.jpg);
 	}
 }
 
 .p-subMV::after {
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-content:'';
-width: 100%;
-height: 100%;
-background: #000;
-opacity: 0.4;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	content:'';
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.4;
 }
 
 .p-subMV__text {
@@ -56,4 +53,18 @@ opacity: 0.4;
 	@include mq('md') {
 		font-size: rem(22);
 	}
+}
+
+.p-subMv__img {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.p-subMv__img img {
+	max-width: unset;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top center;
 }

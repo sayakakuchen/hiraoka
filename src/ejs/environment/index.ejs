@@ -6,7 +6,10 @@
 </header>
 <main>
   <section class="l-subMv">
-    <%- include('../project/_p-subMv') %>
+    <%- include('../project/_p-subMv',{
+      subtitle:'社内環境',
+      title:'environment'
+    }) %>
   </section>
   <div class="l-environmentLinks">
     <%- include('../project/_p-environmentLinks') %>
@@ -23,8 +26,8 @@
   <section class="l-environmentMmerit">
     <%- include('../project/_p-environmentMerit') %>
   </section>
-  <div class="l-environmentEntry">
-    <%- include('../project/_p-environmentEntry') %>
+  <div class="l-entry">
+    <%- include('../project/_p-entry') %>
   </div>
 </main>
 <footer class="l-footer">

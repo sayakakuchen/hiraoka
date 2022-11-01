@@ -2,11 +2,14 @@
 <html lang="ja">
 <%- include('../common/_head2') %>
 <header class="l-header">
-  <%- include('../common/_p-header') %>
+  <%- include('../common/_p-header2') %>
 </header>
 <main>
   <section class="l-subMv">
-    <%- include('../project/_p-subMv') %>
+    <%- include('../project/_p-subMv',{
+      title:'concept',
+      subtitle:'コンセプト'
+    }) %>
   </section>
   <div class="l-environmentLinks">
     <%- include('../project/_p-environmentLinks') %>
@@ -23,12 +26,12 @@
   <section class="l-environmentMmerit">
     <%- include('../project/_p-environmentMerit') %>
   </section>
-  <div class="l-environmentEntry">
-    <%- include('../project/_p-environmentEntry') %>
+  <div class="l-entry">
+    <%- include('../project/_p-entry') %>
   </div>
 </main>
 <footer class="l-footer">
-  <%- include('../common/_p-footer') %>
+  <%- include('../common/_p-footer2') %>
 </footer>
 </body>
 

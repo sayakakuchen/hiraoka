@@ -1,7 +1,6 @@
 @use "global"as *;
 
-.p-environmentEntry__inner {
-
+.p-entry__inner {
   @include mq(md) {
     width: 100%;
     max-width: 1500px + strip-unit($padding-pc) * 2;
