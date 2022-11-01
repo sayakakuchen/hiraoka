@@ -1,0 +1,17 @@
+@use "global"as *;
+
+.l-workStyle {
+  margin-top: rem(25);
+
+  @include mq('md') {
+  margin-top: rem(120);
+  }
+}
+
+.l-workStyle + .l-workStyle {
+  margin-top: rem(85);
+
+  @include mq('md') {
+    margin-top: rem(128);
+  }
+}

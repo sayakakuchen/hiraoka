@@ -1,12 +1,48 @@
 @use "global"as *;
 
+
+.p-workStyle__inner {
+  margin: 0 auto;
+  max-width: rem(540); //状況によって変える必要があるかも
+  width: 100%;
+  height: inherit;
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+
+  @include mq(md) {
+    max-width: 1500px + strip-unit($padding-pc) * 2;
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+  }
+}
+
+.p-workStyle__contents {
+
+  @include mq(md) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
 .p-workStyle__units {
   position: relative;
-  margin-left: calc(50% - 50vw);
-  width: 100vw;
+  margin-top: rem(50);
 
   @include mq('md') {
+    margin-top: rem(100);
     width: 100%;
+  }
+}
+
+.p-workStyle__unit {
+  position: relative;
+  width: 100%;
+  min-height: rem(96);
+  margin-left: auto;
+
+  @include mq('md') {
+    width: 50%;
+    min-height: rem(114);
   }
 }
 
@@ -14,8 +50,8 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 9%;
-  height: 100%;
+  left: rem(36);
+  height: calc(100% - #{rem(35)});
   width: rem(1.44);
   background-color: $yellow;
   transform: translate(0, 0);
@@ -26,22 +62,16 @@
   }
 }
 
-.p-workStyle__unit {
-  position: relative;
-  width: 100%;
-  margin-left: auto;
+.p-workStyle__unit+.p-workStyle__unit {
+  margin-top: rem(9);
 
   @include mq('md') {
-    width: 50%;
+    margin-top: rem(21);
   }
 }
 
-.p-workStyle__unit+.p-workStyle__unit {
-  margin-top: rem(27.5);
-
-  @include mq('md') {
-    margin-top: rem(43);
-  }
+.p-workStyle__unit+.p-workStyle__unit.u-marginTop0 {
+  margin-top: rem(0);
 }
 
 .p-workStyle__unit:nth-child(even) {
@@ -54,7 +84,7 @@
 .p-workStyle__unit img {
   position: absolute;
   top: 0;
-  left: calc(9% - rem(36));
+  left: 0;
   width: rem(72);
   height: rem(72);
   border-radius: 50%;
@@ -63,7 +93,6 @@
   @include mq('md') {
     width: rem(100);
     height: rem(100);
-    // bottom: -0.3125rem;
     left: rem(-50);
   }
 }
@@ -76,8 +105,8 @@
 }
 
 .p-workStyle__unitTitle {
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
+  justify-content: start;
   align-items: center;
   padding: rem(27.5) 0 0 rem(78);
   margin: 0;
@@ -86,18 +115,19 @@
   font-size: rem(17);
 
   @include mq('md') {
+    padding: rem(22) 0 0 rem(82);
     line-height: 1.75;
     font-size: rem(24);
   }
 }
 
 .p-workStyle__unit:nth-child(even) .p-workStyle__unitTitle {
+
   @include mq('md') {
+    padding: rem(21) rem(84) 0 0;
     justify-content: end;
-    text-align: right;
   }
 }
-
 
 .p-workStyle__unit:nth-child(even) .p-workStyle__unitTitle::before {
 
@@ -109,10 +139,9 @@
 .p-workStyle__unitTitle::before {
   content: "";
   display: inline-block;
-  // flex-shrink: 0;
-  // bottom: 0;
-  width: rem(30);
-  height: rem(4.5);
+  flex-shrink: 0;
+  width: rem(15);
+  height: rem(2);
   margin-right: rem(7.35);
   background: url(../images/environment/workStyle_dotline.png) no-repeat center;
   background-size: cover;
@@ -125,13 +154,13 @@
 }
 
 .p-workStyle__unitText {
-  margin-top: rem(5);
-  padding: 0 0 0 rem(78 + 30 + 7.35);
+  padding: 0 0 0 rem(99.5);
   line-height: 1.5;
   font-size: rem(11);
 
   @include mq('md') {
     font-size: rem(18);
+    padding: 0 0 0 rem(193);
   }
 }
 
@@ -139,65 +168,27 @@
   background-color: $yellow;
 }
 
-.p-calendar__titleWrapper {
-  text-align: center;
-}
-
-.p-yellowTitle {
-  display: inline-block;
-  background-color: $yellow;
-  padding: 0 rem(4.4);
-  font-size: rem(18.72);
-  line-height: 1.75;
+.p-workStyle__calendar {
+  margin-top: rem(62);
 
   @include mq('md') {
-    font-size: rem(26);
+    margin-top: rem(100);
   }
 }
 
-.p-calendar__description {
-  display: flex;
-  align-items: center;
-}
-
-.p-calendar__description-term::before {}
-
-.p-calendar__description-icon {
-  display: block;
-  // width: rem(12.5);
-  // height: rem(12.5);
-  padding: rem(7) rem(7);
-  border-radius: 50%;
-  background-color: #02B5FD;
-  margin-right: rem(2);
-}
-
-
-.p-calendar__description-icon img {
-  width: rem(12.5);
-  height: rem(12.5);
-  max-width: initial;
-  fill: #fff;
-}
-
-.p-calendar__description-term {
-  color: #02B5FD;
-  font-size: rem(14);
-  font-weight: bold;
-  line-height: 1.60714;
-}
-
-.p-calendar__description-term::after {
-  content: '・・';
-}
-
-.p-calendar__description-text {
-  font-size: rem(12);
-  line-height: 1.5;
+.p-workStyle__unit:nth-child(even) .p-workStyle__unitText {
 
   @include mq('md') {
-    font-size: rem(14);
-    line-height: 2.5714;
+    padding: 0 rem(203) 0 0;
+  }
+}
+
+.p-workStyle__points {
+  margin-top: rem(50);
+
+  @include mq('md') {
+    max-width: rem(800);
+    margin: rem(70) auto 0;
   }
 }
 
@@ -206,10 +197,11 @@
 }
 
 .p-workStyle__pointsText {
+  margin-top: rem(25);
   font-size: rem(15);
   line-height: 2;
 
   @include mq('md') {
-    font-size: rem(18);
+    font-size: rem(17.85);
   }
 }

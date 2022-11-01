@@ -1,0 +1,9 @@
+@use "global"as *;
+
+.l-environmentMmerit {
+  margin-top: rem(100);
+
+  @include mq('md') {
+    margin-top: rem(150);
+  }
+}

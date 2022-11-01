@@ -1,0 +1,27 @@
+@use "global"as *;
+
+.p-yellowLineCards {
+
+  @include mq('md') {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(122) rem(79.99999);
+  }
+}
+
+.p-yellowLinecards__card {
+  width: 100%;
+
+  @include mq('md') {
+    width: calc(24.99999% - rem(79.99999) * 3 /4);
+    max-width: 100%;
+  }
+}
+
+.p-yellowLinecards__card+.p-yellowLinecards__card {
+  margin-top: rem(50);
+
+  @include mq('md') {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,9 @@
+@use "global"as *;
+
+.l-environmentLinks {
+  margin-top: rem(21);
+
+  @include mq('md') {
+    margin-top: rem(120);
+  }
+}

@@ -1,10 +1,15 @@
-
 @use "global"as *;
 
 .p-yellowTitle {
-  padding-top: rem(10);
-  font-size: rem(17.5);
-  line-height: 1.75;
+  display: inline-block;
+  background-color: $yellow;
+  padding: 0 rem(17.4);
+  font-size: rem(18.72);
+  line-height: 1;
+
+  @include mq('md') {
+    font-size: rem(26);
+  }
 }
 
 .p-yellowTitle--en {

@@ -3,11 +3,12 @@
 .p-subMV {
 	position: relative;
 	width: 100%;
-	height: rem(375);
+	height: rem(312.5);
 	background: url(../images/environment/environment_subMV_01.jpg) no-repeat center;
 	background-size: cover;
 
 	@include mq('md') {
+		height: rem(600);
 		background-image: url(../images/environment/environment_subMV_01_pc.jpg);
 	}
 }
@@ -18,7 +19,7 @@ top: 0;
 bottom: 0;
 left: 0;
 right: 0;
-content:' ';
+content:'';
 width: 100%;
 height: 100%;
 background: #000;
@@ -28,7 +29,7 @@ opacity: 0.4;
 .p-subMV__text {
 	position: absolute;
 	z-index: 3;
-	top: 50%;
+	top: 38%;
 	width: 100%;
 	color: $white;
 	text-align: center;
@@ -37,6 +38,11 @@ opacity: 0.4;
 	line-height: 1;
 	text-transform: uppercase;
 	transform: translateY(-50%);
+
+	@include mq('md') {
+		top: 42%;
+		font-size: rem(80);
+	}
 }
 
 .p-subMV__text::before {
@@ -46,4 +52,8 @@ opacity: 0.4;
 	color: $white;
 	font-size: rem(14);
 	line-height:1;
+
+	@include mq('md') {
+		font-size: rem(22);
+	}
 }

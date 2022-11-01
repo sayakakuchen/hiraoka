@@ -1,0 +1,24 @@
+@use "global"as *;
+
+.p-environmentMerit__inner {
+  width: 100%;
+  max-width: rem(540); //状況によって変える必要があるかも
+  height: inherit;
+  margin: 0 auto;
+  padding-right: 47.5px;
+  padding-left: 47.5px;
+
+  @include mq(md) {
+    max-width: 1500px + strip-unit($padding-pc) * 2;
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+  }
+}
+
+.p-environmentMerit__yellowLineCards {
+  margin-top: rem(71);
+
+  @include mq('md') {
+    margin-top: rem(147);
+  }
+}
