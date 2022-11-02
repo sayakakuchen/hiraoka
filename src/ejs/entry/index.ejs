@@ -25,6 +25,20 @@
 <footer class="l-footer">
   <%- include('../common/_p-footer2') %>
 </footer>
+<script src="../form/js/mailform-js.php"></script>
+<!-- フリガナ自動入力ライブラリここから -->
+<script src="../form/js/jquery.autoKana.js"></script>
+<script>
+	(function( $ ) {
+		$.fn.autoKana( 'input[name="name_1"]', 'input[name="read_1"]', {
+			katakana: true
+		});
+		$.fn.autoKana( 'input[name="name_2"]', 'input[name="read_2"]', {
+			katakana: true
+		});
+	})( jQuery );
+</script>
+<!-- フリガナ自動入力ライブラリここまで -->
 </body>
 
 </html>

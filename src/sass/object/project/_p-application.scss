@@ -4,21 +4,39 @@
 
 }
 
-.p-application__inner {
-
+.p-application__inner.l-inner {
+    @include mq(md) {
+        max-width: rem(1550);
+    }
 }
 
 .p-application__title {
+    font-size: rem(27);
     text-align: center;
+
+    @include mq(md) {
+        font-size: rem(30);
+    }
 }
 
 .p-application__table {
     margin-top: rem(30);
+
+    @include mq(md) {
+        margin-top: rem(45);
+        border-bottom: 1px solid #adadad;
+    }
 }
 
 .p-application__table dl {
     position: relative;
     padding: rem(25) 0;
+
+    @include mq(md) {
+        display: flex;
+        align-items: flex-start;
+        padding: rem(35) rem(100);
+    }
 }
 
 .p-application__table dl::before {
@@ -30,11 +48,22 @@
     background-color: #adadad;
     left: 0;
     top: 0;
+
+    @include mq(md) {
+        width: 100%;
+        margin-left: initial;
+    }
 }
 
 .p-application__table dt {
     font-size: rem(14);
     font-weight: bold;
+
+    @include mq(md) {
+        width: rem(280);
+        font-size: rem(20);
+        line-height: 1.5;
+    }
 }
 
 .p-application__table dd {
@@ -42,9 +71,20 @@
     margin-top: rem(24);
     line-height: calc(42 / 28);
     font-feature-settings: "palt";
+
+    @include mq(md) {
+        width: calc(100% - #{rem(280)});
+        font-size: rem(20);
+        margin-top: 0;
+    }
 }
 
 .p-application__table dd strong {
     display: inline-block;
     margin-top: rem(22);
+
+    @include mq(md) {
+        width: rem(160);
+        margin-top: rem(10);
+    }
 }

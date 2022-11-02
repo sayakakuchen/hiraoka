@@ -4,8 +4,10 @@
 
 }
 
-.p-privacy__inner {
-
+.p-privacy__inner.l-inner {
+    @include mq(md) {
+        max-width: rem(1550);
+    }
 }
 
 .p-privacy__textTop {
@@ -13,20 +15,36 @@
     font-family: $sub-font;
     line-height: 2;
     letter-spacing: 0.04em;
+
+    @include mq(md) {
+        font-size: rem(22);
+    }
 }
 
 .p-privacy__items {
     margin-top: rem(72);
+
+    @include mq(md) {
+        margin-top: rem(100);
+    }
 }
 
 .p-privacy__item {
     padding: rem(30) 0;
     border-top: 1px solid #9e9e9f;
+
+    @include mq(md) {
+        padding: rem(50) 0;
+    }
 }
 
 .p-privacy__item-title {
     font-family: $sub-font;
     font-size: rem(17);
+
+    @include mq(md) {
+        font-size: rem(30);
+    }
 }
 
 .p-privacy__item-text {
@@ -35,6 +53,11 @@
     margin-top: rem(36);
     line-height: 2;
     font-feature-settings: "palt";
+
+    @include mq(md) {
+        font-size: rem(20);
+        margin-top: rem(50);
+    }
 }
 
 .p-privacy__item-text a {

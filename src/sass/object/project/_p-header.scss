@@ -12,7 +12,12 @@
     @include mq(md) {
         height: rem(200);
         pointer-events: none;
+        background-color: transparent;
     }
+}
+
+.l-header--top .p-header {
+    background-color: transparent;
 }
 
 .p-header__inner.l-inner {

@@ -7,6 +7,10 @@
     font-size: rem(23);
     text-align: center;
     line-height: calc(58/46);
+
+    @include mq(md) {
+        font-size: rem(50);
+    }
 }
 
 .c-title2::before {
@@ -18,4 +22,10 @@
     left: 0;
     bottom: rem(-3);
     z-index: -1;
+
+    @include mq(md) {
+        width: calc(100% + 1em);
+        height: rem(24);
+        left: -0.5em;
+    }
 }

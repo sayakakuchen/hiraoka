@@ -2,4 +2,8 @@
 
 .l-content {
     margin-top: rem(74);
+
+    @include mq(md) {
+        margin-top: rem(145);
+    }
 }

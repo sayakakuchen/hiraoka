@@ -4,14 +4,21 @@
 
 }
 
-.p-strong__inner {
-
+.p-strong__inner.l-inner {
+    @include mq(md) {
+        max-width: rem(1470);
+    }
 }
 
 .p-strong__subtitle {
     width: rem(150);
     height: rem(23);
     margin: 0 auto;
+
+    @include mq(md) {
+        width: rem(250);
+        height: rem(36);
+    }
 }
 
 .p-strong__title {
@@ -24,42 +31,76 @@
     font-weight: bold;
     margin-top: rem(50);
     line-height: 2;
+
+    @include mq(md) {
+        font-size: rem(30);
+    }
 }
 
 .p-strong__content {
     margin-top: rem(100);
+
+    @include mq(md) {
+        margin-top: rem(85);
+    }
 }
 
 .p-strong__content-title {
     text-align: center;
     font-size: rem(37);
+
+    @include mq(md) {
+        font-size: rem(75);
+    }
 }
 
 .p-strong__content-title span {
     font-size: rem(67);
     color: $yellow;
     -webkit-text-stroke: 1px #000;
+
+    @include mq(md) {
+        font-size: rem(135);
+    }
 }
 
 .p-strong__items {
     display: grid;
     margin-top: rem(50);
+
+    @include mq(md) {
+        margin-top: rem(85);
+        grid-template-columns: repeat(3,1fr);
+        gap: rem(140);
+    }
 }
 
 .p-strong__item {
     padding: rem(60) 0;
     border-top: rem(8) solid $black;
     border-bottom: rem(8) solid $black;
+
+    @include mq(md) {
+        padding: rem(67) 0;
+    }
 }
 
 .p-strong__item + .p-strong__item {
     margin-top: rem(-8);
+
+    @include mq(md) {
+        margin-top: 0;
+    }
 }
 
 .p-strong__item-number {
     font-size: rem(34);
     font-family: $din;
     text-align: center;
+
+    @include mq(md) {
+        font-size: rem(40);
+    }
 }
 
 .p-strong__item-title {
@@ -67,6 +108,11 @@
     font-family: $din;
     text-align: center;
     margin-top: rem(17);
+
+    @include mq(md) {
+        font-size: rem(60);
+        margin-top: rem(26);
+    }
 }
 
 .p-strong__item-subtitle {
@@ -76,6 +122,11 @@
     line-height: 1.25;
     margin: 0 auto;
     margin-top: rem(3);
+
+    @include mq(md) {
+        font-size: rem(20);
+        max-width: rem(260);
+    }
 }
 
 .p-strong__item-bigText {
@@ -84,12 +135,22 @@
     font-weight: bold;
     margin-top: rem(40);
     line-height: 1.5;
+
+    @include mq(md) {
+        font-size: rem(24);
+        margin-top: rem(46);
+    }
 }
 
 .p-strong__item-text {
     font-size: rem(17);
     line-height: calc(75/34);
     margin-top: rem(40);
+
+    @include mq(md) {
+        font-size: rem(20);
+        margin-top: rem(50);
+    }
 }
 
 .p-strong__bottom {
@@ -98,4 +159,9 @@
     text-align: center;
     margin-top: rem(100);
     line-height: calc(120/80);
+
+    @include mq(md) {
+        font-size: rem(80);
+        margin-top: rem(195);
+    }
 }

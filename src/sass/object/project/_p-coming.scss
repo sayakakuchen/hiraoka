@@ -5,6 +5,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include mq(md) {
+        min-height: rem(500);
+    }
 }
 
 .p-coming__inner {
@@ -15,4 +19,8 @@
     font-size: rem(20);
     font-family: $en-font;
     text-align: center;
+
+    @include mq(md) {
+        font-size: rem(40);
+    }
 }

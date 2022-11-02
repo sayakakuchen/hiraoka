@@ -4,13 +4,21 @@
 
 }
 
-.p-driversTop__inner {
+.p-driversTop__inner.l-inner {
 
+    @include mq(md) {
+        max-width: rem(1480);
+    }
 }
 
 .p-driversTop__btns {
     display: grid;
     gap: rem(25);
+
+    @include mq(md) {
+        grid-template-columns: repeat(3,1fr);
+        gap: rem(58);
+    }
 }
 
 .p-driversTop__btn {
@@ -25,6 +33,10 @@
     height: 100%;
     padding: rem(15) rem(30);
     transition: all 0.3s;
+
+    @include mq(md) {
+        padding: rem(35) rem(45);
+    }
 }
 
 .p-driversTop__btn a:hover {
@@ -42,25 +54,49 @@
     transform: translateY(-50%);
     right: rem(30);
     background: url(../images/common/arrow_bottom_black.png) center center / contain no-repeat;
+
+    @include mq(md) {
+        width: rem(31);
+        height: rem(18);
+        right: rem(45);
+    }
 }
 
 .p-driversTop__btn-year {
     font-size: rem(15);
     color: #666666;
+
+    @include mq(md) {
+        font-size: rem(20);
+    }
 }
 
 .p-driversTop__btn-position {
     font-size: rem(15);
     margin-top: rem(22);
+
+    @include mq(md) {
+        font-size: rem(20);
+        margin-top: rem(36);
+    }
 }
 
 .p-driversTop__btn-name {
     font-size: rem(23);
     margin-top: rem(16);
+
+    @include mq(md) {
+        font-size: rem(30);
+        margin-top: rem(24);
+    }
 }
 
 .p-driversTop__btn-en {
     font-size: rem(11);
     color: #666666;
     margin-top: rem(12);
+
+    @include mq(md) {
+        font-size: rem(15);
+    }
 }

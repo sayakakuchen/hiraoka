@@ -6,6 +6,7 @@
     height: 100%;
     border-radius: 50%;
     background-color: $black;
+    border: 3px solid $white;
 }
 
 .p-hamburger.is-active {
@@ -29,7 +30,7 @@
 
 .p-hamburger.is-active span:nth-child(1) {
     background-color: $black;
-    top: rem(20);
+    top: rem(18);
     transform: translateX(-50%) rotate(45deg);
 
     @include mq(md) {
@@ -39,7 +40,7 @@
 
 .p-hamburger.is-active span:nth-child(2) {
     background-color: $black;
-    top: rem(20);
+    top: rem(18);
     transform: translateX(-50%) rotate(-45deg);
 
     @include mq(md) {
@@ -49,7 +50,7 @@
 
 .p-hamburger span:nth-child(1) {
     transform: translateX(-50%);
-    top: rem(16);
+    top: rem(14);
 
     @include mq(md) {
         top: rem(38);
@@ -58,7 +59,7 @@
 
 .p-hamburger span:nth-child(2) {
     transform: translateX(-50%);
-    top: rem(24);
+    top: rem(22);
 
     @include mq(md) {
         top: rem(56);

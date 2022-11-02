@@ -1,7 +1,7 @@
 <div class="p-form">
     <div class="p-form__inner l-inner">
         <h2 class="p-form__title">枚岡交通 求人応募フォーム</h2>
-        <form action="php/mailform.php" method="post" id="mail_form" class="p-form__main">
+        <form action="../form/php/mailform.php" method="post" id="mail_form" class="p-form__main">
             <dl>
                 <dt>名前<span class="hissu">必須</span></dt>
                 <dd class="required"><input type="text" name="name_1" value="" placeholder="枚岡"/> <input type="text" name="name_2" value="" placeholder="太郎"/></dd>
@@ -10,7 +10,11 @@
                 <dt>フリガナ<span class="hissu">必須</span></dt>
                 <dd class="required"><input type="text" name="read_1" value="" placeholder="ヒラオカ"/> <input type="text" name="read_2" value="" placeholder="タロウ"/></dd>
             </dl>
-            <dl>
+            <dl class="harf">
+                <dt>年齢<span class="hissu">必須</span></dt>
+                <dd class="required"><input type="text" name="age" value="" placeholder="25歳"/> </dd>
+            </dl>
+            <dl class="harf">
                 <dt>性別<span class="hissu">必須</span></dt>
                 <dd class="required">
                     <select name="gender">
@@ -25,7 +29,7 @@
             </dl>
             <dl>
                 <dt>メールアドレス<span class="hissu">必須</span></dt>
-                <dd class="required"><input type="email" name="mail_address" value="" placeholder="example@abc.com"/></dd>
+                <dd class="required"><input type="email" name="mail_address" value="" placeholder="例)hiraokataro@gmail.com"/></dd>
             </dl>
             <dl>
                 <dt>経歴<span class="ninni">任意</span></dt>
@@ -48,5 +52,13 @@
 
             <p id="form_submit"><input type="button" id="form_submit_button" value="入力内容を確認する" class="c-btn c-btn--yellow"/></p>
         </form>
+        <div id="confirm_field">
+            <h2>以下の内容で送信してよろしいですか？</h2>
+            <div id="confirm_window">
+                <!-- 確認ウインドウ表示時は、この位置に入力内容を含んだdl,dt,ddが挿入されます。このコメント文は消しても問題ありません。 -->
+            </div>
+            <p id="confirm_submit"><input type="button" id="confirm_submit_button" value="送信する" /><input type="button" id="confirm_cancel_button" value="戻る" /></p>
+        </div>
+        
     </div>
 </div>
