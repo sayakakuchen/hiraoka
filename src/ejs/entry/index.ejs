@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('../common/_head2') %>
+<header class="l-header">
+  <%- include('../common/_p-header2') %>
+</header>
+<main>
+  <section class="l-subMv">
+    <%- include('../project/_p-subMv',{
+      title:'entry',
+      subtitle:'応募する'
+    }) %>
+  </section>
+  <div class="l-breadcrumb">
+    <%- include('../project/_p-breadcrumb',{
+        page:'entry'
+    }) %> 
+  </div>
+
+  <div class="l-form">
+      <%- include('../project/_p-form') %> 
+  </div>
+  
+</main>
+<footer class="l-footer">
+  <%- include('../common/_p-footer2') %>
+</footer>
+<script src="../form/js/mailform-js.php"></script>
+<!-- フリガナ自動入力ライブラリここから -->
+<script src="../form/js/jquery.autoKana.js"></script>
+<script>
+	(function( $ ) {
+		$.fn.autoKana( 'input[name="name_1"]', 'input[name="read_1"]', {
+			katakana: true
+		});
+		$.fn.autoKana( 'input[name="name_2"]', 'input[name="read_2"]', {
+			katakana: true
+		});
+	})( jQuery );
+</script>
+<!-- フリガナ自動入力ライブラリここまで -->
+</body>
+
+</html>

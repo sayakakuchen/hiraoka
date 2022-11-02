@@ -1,6 +1,6 @@
 @use "global"as *;
 
-.l-environmentEntry {
+.l-entry {
   margin-top: rem(91);
 
   @include mq('md') {

@@ -2,33 +2,39 @@
 <html lang="ja">
 <%- include('../common/_head2') %>
 <header class="l-header">
-  <%- include('../common/_p-header') %>
+  <%- include('../common/_p-header2') %>
 </header>
 <main>
   <section class="l-subMv">
-    <%- include('../project/_p-subMv') %>
+    <%- include('../project/_p-subMv',{
+      title:'concept',
+      subtitle:'コンセプト'
+    }) %>
   </section>
-  <div class="l-environmentLinks">
-    <%- include('../project/_p-environmentLinks') %>
+  <div class="l-breadcrumb">
+    <%- include('../project/_p-breadcrumb',{
+        page:'concept'
+    }) %> 
   </div>
-  <section class="l-workStyle">
-    <%- include('../project/_p-workStyle_12days') %>
+  <section class="l-conceptTop">
+    <%- include('../project/_p-conceptTop') %> 
   </section>
-  <section class="l-workStyle">
-    <%- include('../project/_p-workStyle_night') %>
+  <div class="l-point">
+    <%- include('../project/_p-point') %> 
+  </div>
+  <section class="l-worklife">
+    <%- include('../project/_p-worklife') %> 
   </section>
-  <section class="l-workStyle">
-    <%- include('../project/_p-workStyle_17days') %>
+  <section class="l-strong">
+    <%- include('../project/_p-strong') %> 
   </section>
-  <section class="l-environmentMmerit">
-    <%- include('../project/_p-environmentMerit') %>
-  </section>
-  <div class="l-environmentEntry">
-    <%- include('../project/_p-environmentEntry') %>
+  
+  <div class="l-entry">
+    <%- include('../project/_p-entry') %>
   </div>
 </main>
 <footer class="l-footer">
-  <%- include('../common/_p-footer') %>
+  <%- include('../common/_p-footer2') %>
 </footer>
 </body>
 

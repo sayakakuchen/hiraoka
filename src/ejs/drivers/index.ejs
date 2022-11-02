@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('../common/_head2') %>
+<header class="l-header">
+  <%- include('../common/_p-header2') %>
+</header>
+<main>
+  <section class="l-subMv">
+    <%- include('../project/_p-subMv',{
+      title:'drivers',
+      subtitle:'先輩紹介'
+    }) %>
+  </section>
+  <div class="l-breadcrumb">
+    <%- include('../project/_p-breadcrumb',{
+        page:'drivers'
+    }) %> 
+  </div>
+
+  <div class="l-driversTop">
+      <%- include('../project/_p-driversTop') %> 
+  </div>
+
+  <div class="l-senior">
+      <%- include('../project/_p-senior') %> 
+  </div>
+  
+  
+  <div class="l-entry">
+    <%- include('../project/_p-entry') %>
+  </div>
+</main>
+<footer class="l-footer">
+  <%- include('../common/_p-footer2') %>
+</footer>
+</body>
+
+</html>

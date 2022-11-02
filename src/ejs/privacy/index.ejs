@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('../common/_head2') %>
+    <header class="l-header">
+    <%- include('../common/_p-header2') %>
+    </header>
+    <main>
+        <section class="l-subMv">
+            <div class="p-subMv">
+                <h2 class="p-subMv__text" data-ja="プライバシーポリシー">PRIVACY POLICY</h2>
+                <picture class="p-subMv__img">
+                    <source srcset="../images/privacy/privacy_subMv_01_pc.jpg" media="(min-width:768px)">
+                    <img src="../images/privacy/privacy_subMv_01.jpg" alt="">
+                </picture>
+            </div>
+        </section>
+
+        <div class="l-breadcrumb">
+            <%- include('../project/_p-breadcrumb',{
+                page:'Privacy policy'
+            }) %> 
+        </div>
+
+        <div class="l-privacy">
+            <%- include('../project/_p-privacy') %> 
+        </div>
+        
+    </main>
+    <footer class="l-footer">
+    <%- include('../common/_p-footer2') %>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+@use 'global' as *;
+
+.p-breadcrumb {
+    padding: rem(20) 0;
+    background-color: #eeeeef;
+    @include mq(md) {
+      padding: rem(25) 0;
+    }
+}
+.p-breadcrumb__inner.l-inner {
+  @include mq(md) {
+    max-width: rem(1550);
+  }
+}
+.p-breadcrumb li {
+    display: inline;
+    font-weight: 500;
+  }
+.p-breadcrumb li:after {/* >を表示*/
+    content: '>';
+    padding: 0 0.2em;
+    color:#231815;
+  }
+.p-breadcrumb li:last-child:after {
+    content: '';
+  }
+.p-breadcrumb li a {
+    font-size: rem(14);
+    color:#231815;
+
+    @include mq(md) {
+      font-size: rem(20);
+    }
+}
+.p-breadcrumb li span {
+    font-size: rem(14);
+    color:#231815;
+
+    @include mq(md) {
+      font-size: rem(20);
+    }
+}

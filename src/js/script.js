@@ -60,15 +60,38 @@ jQuery(function ($) {
   });
 
 
+  // エントリーボタン
   $('.js-entryBtn a').on({
+    "mouseenter": function(){$(this).children('img').attr('src', '../images/common/entry_icon2.png');},
+    "mouseleave": function(){$(this).children('img').attr('src', '../images/common/entry_icon.png');}
+  });
+
+  $('.js-entryBtn').on({
+    "mouseenter": function(){$(this).children('img').attr('src', '../images/common/entry_icon2.png');},
+    "mouseleave": function(){$(this).children('img').attr('src', '../images/common/entry_icon.png');}
+  });
+
+  $('.js-entryBtnFront').on({
     "mouseenter": function(){$(this).children('img').attr('src', './images/common/entry_icon2.png');},
     "mouseleave": function(){$(this).children('img').attr('src', './images/common/entry_icon.png');}
   });
 
-  $('.js-entryBtn').on({
-    "mouseenter": function(){$(this).children('img').attr('src', './images/common/entry_icon2.png');},
-    "mouseleave": function(){$(this).children('img').attr('src', './images/common/entry_icon.png');}
-  });
+    // お問い合わせ
+    $('#form_submit_button').prop('disabled', true);
+    $('#form_submit_button').css('opacity', '0.7');
+    $('#form_submit_button').css('cursor', 'not-allowed');
+    $('#check').on('click', function () {
+      if ($(this).prop('checked') == false) {
+        $('#form_submit_button').prop('disabled', true);
+        $('#form_submit_button').css('opacity', '0.7');
+        $('#form_submit_button').css('cursor', 'not-allowed');
+      } else {
+        $('#form_submit_button').prop('disabled', false);
+        $('#form_submit_button').css('opacity', '1');
+        $('#form_submit_button').css('cursor', 'pointer');
+      }
+    });
+  
 
   // フェードイン
   const controller = new ScrollMagic.Controller()
@@ -112,4 +135,16 @@ window.onload = function() {
     });
   });
 };
+
+// 拡大縮小
+window.addEventListener('resize', function () {
+  var zoom_level = window.devicePixelRatio || window.screen.availWidth / document.documentElement.clientWidth;
+  document.documentElement.style.transform = 'scale(' + zoom_level + ')';
+  if (zoom_level >= 1) {
+    document.documentElement.style.transformOrigin = 'top left';
+  } else {
+    document.documentElement.style.transformOrigin = 'top center';
+    document.documentElement.style.height = zoom_level * 100 + '%';
+  }
+});
 

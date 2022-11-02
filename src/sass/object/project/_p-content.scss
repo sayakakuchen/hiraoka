@@ -1,0 +1,32 @@
+@use 'global' as *;
+
+.p-content {
+
+}
+
+.p-content__inner.l-inner {
+    @include mq(md) {
+        max-width: rem(1400);
+    }
+}
+
+.p-content__bigText {
+    text-align: center;
+    font-size: rem(25);
+    font-weight: bold;
+
+    @include mq(md) {
+        font-size: rem(60);
+    }
+}
+
+.p-content__text {
+    font-size: rem(13);
+    line-height: 2;
+    margin-top: rem(17);
+
+    @include mq(md) {
+        font-size: rem(26);
+        margin-top: rem(47);
+    }
+}

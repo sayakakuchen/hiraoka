@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('../common/_head2') %>
+    <header class="l-header">
+    <%- include('../common/_p-header2') %>
+    </header>
+    <main>
+    <section class="l-subMv">
+        <%- include('../project/_p-subMv',{
+        title:'message',
+        subtitle:'代表挨拶'
+        }) %>
+    </section>
+    <div class="l-breadcrumb">
+        <%- include('../project/_p-breadcrumb',{
+            page:'message'
+        }) %> 
+    </div>
+    <section class="l-message">
+        <%- include('../project/_p-message') %> 
+    </section>
+    <section class="l-company">
+        <%- include('../project/_p-company') %> 
+    </section>
+    
+    <div class="l-entry">
+        <%- include('../project/_p-entry') %>
+    </div>
+    </main>
+    <footer class="l-footer">
+    <%- include('../common/_p-footer2') %>
+    </footer>
+</body>
+
+</html>

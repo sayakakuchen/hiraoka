@@ -1,0 +1,42 @@
+@use 'global' as *;
+
+.p-thanks {
+
+}
+
+.p-thanks__inner {
+
+}
+
+.p-thanks__text {
+    font-size: rem(14);
+    text-align: center;
+    font-feature-settings: "palt";
+    line-height: 1.5;
+
+    @include mq(md) {
+        font-size: rem(18);
+    }
+}
+
+.p-thanks__btn {
+    max-width: rem(250);
+    margin: 0 auto;
+    margin-top: rem(60);
+
+    @include mq(md) {
+        max-width: rem(350);
+    }
+}
+
+.p-thanks__img {
+    width: rem(120);
+    margin: 0 auto;
+    margin-top: rem(46);
+    animation: carMotion 5s linear infinite;
+
+    @include mq(md) {
+        width: rem(210);
+        margin-top: rem(60);
+    }
+}

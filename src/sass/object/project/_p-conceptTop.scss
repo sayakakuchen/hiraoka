@@ -1,0 +1,44 @@
+@use 'global' as *;
+
+.p-conceptTop {
+
+}
+
+.p-conceptTop__inner.l-inner {
+    max-width: rem(1460);
+}
+
+.p-conceptTop__title {
+    font-size: rem(44);
+    text-align: center;
+    line-height: calc(111/92);
+
+    @include mq(md) {
+        font-size: rem(110);
+        font-feature-settings: "palt";
+    }
+}
+
+.p-conceptTop__wrap {
+    display: grid;
+    gap: rem(48);
+    margin-top: rem(72);
+    @include mq(md) {
+        grid-template-columns: repeat(2,1fr);
+        margin-top: rem(176);
+    }
+}
+
+.p-conceptTop__text {
+    font-size: rem(15);
+    line-height: 3;
+    @include mq(md) {
+        font-size: rem(24);
+        font-feature-settings: "palt";
+        padding-right: rem(144);
+    }
+}
+
+.p-conceptTop__img {
+
+}
