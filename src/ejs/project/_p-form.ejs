@@ -1,0 +1,52 @@
+<div class="p-form">
+    <div class="p-form__inner l-inner">
+        <h2 class="p-form__title">枚岡交通 求人応募フォーム</h2>
+        <form action="php/mailform.php" method="post" id="mail_form" class="p-form__main">
+            <dl>
+                <dt>名前<span class="hissu">必須</span></dt>
+                <dd class="required"><input type="text" name="name_1" value="" placeholder="枚岡"/> <input type="text" name="name_2" value="" placeholder="太郎"/></dd>
+            </dl>
+            <dl>
+                <dt>フリガナ<span class="hissu">必須</span></dt>
+                <dd class="required"><input type="text" name="read_1" value="" placeholder="ヒラオカ"/> <input type="text" name="read_2" value="" placeholder="タロウ"/></dd>
+            </dl>
+            <dl>
+                <dt>性別<span class="hissu">必須</span></dt>
+                <dd class="required">
+                    <select name="gender">
+                        <option value="男性">男性</option>
+                        <option value="女性">女性</option>
+                    </select>
+                </dd>
+            </dl>
+            <dl>
+                <dt>電話番号<span class="hissu">必須</span></dt>
+                <dd class="required"><input type="tel" name="phone" value="" placeholder="090-0909-0909"/></dd>
+            </dl>
+            <dl>
+                <dt>メールアドレス<span class="hissu">必須</span></dt>
+                <dd class="required"><input type="email" name="mail_address" value="" placeholder="example@abc.com"/></dd>
+            </dl>
+            <dl>
+                <dt>経歴<span class="ninni">任意</span></dt>
+                <dd><textarea name="contents"></textarea></dd>
+            </dl>
+            <dl>
+                <dt>備考欄<span class="ninni">任意</span></dt>
+                <dd><textarea name="message"></textarea></dd>
+            </dl>
+
+            <div class="p-form__check">
+                <div class="p-form__input">
+                    <label>
+                        <input type="checkbox" id="check">
+                        <span>応募にあたり<a href="../privacy/">個人情報の
+                            取り扱い</a>に同意します</span>
+                    </label>
+                </div>
+            </div>
+
+            <p id="form_submit"><input type="button" id="form_submit_button" value="入力内容を確認する" class="c-btn c-btn--yellow"/></p>
+        </form>
+    </div>
+</div>

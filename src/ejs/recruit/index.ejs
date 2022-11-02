@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('../common/_head2') %>
+    <header class="l-header">
+    <%- include('../common/_p-header2') %>
+    </header>
+    <main>
+        <section class="l-subMv">
+            <%- include('../project/_p-subMv',{
+            title:'recruit',
+            subtitle:'採用情報'
+            }) %>
+        </section>
+        <div class="l-breadcrumb">
+            <%- include('../project/_p-breadcrumb',{
+                page:'recruit'
+            }) %> 
+        </div>
+        <section class="l-content">
+            <%- include('../project/_p-content',{
+                bigText:'',
+                text:'ITの発達により交通産業に変革が起きている今、枚岡交通はより積極的にアクションを起こしていきます。経験者/未経験社は問いません。枚岡交通で一緒に働きませんか？？'
+            }) %> 
+        </section>
+        <section class="l-application">
+            <%- include('../project/_p-application') %> 
+        </section>
+
+        <div class="l-entry">
+            <%- include('../project/_p-entry') %>
+        </div>
+    </main>
+    <footer class="l-footer">
+    <%- include('../common/_p-footer2') %>
+    </footer>
+</body>
+
+</html>

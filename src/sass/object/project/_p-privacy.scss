@@ -1,0 +1,43 @@
+@use 'global' as *;
+
+.p-privacy {
+
+}
+
+.p-privacy__inner {
+
+}
+
+.p-privacy__textTop {
+    font-size: rem(14);
+    font-family: $sub-font;
+    line-height: 2;
+    letter-spacing: 0.04em;
+}
+
+.p-privacy__items {
+    margin-top: rem(72);
+}
+
+.p-privacy__item {
+    padding: rem(30) 0;
+    border-top: 1px solid #9e9e9f;
+}
+
+.p-privacy__item-title {
+    font-family: $sub-font;
+    font-size: rem(17);
+}
+
+.p-privacy__item-text {
+    font-family: $sub-font;
+    font-size: rem(12);
+    margin-top: rem(36);
+    line-height: 2;
+    font-feature-settings: "palt";
+}
+
+.p-privacy__item-text a {
+    word-break: break-all;
+    color: #2ca3dd;
+}

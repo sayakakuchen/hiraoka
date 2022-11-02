@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('../common/_head2') %>
+    <header class="l-header">
+    <%- include('../common/_p-header2') %>
+    </header>
+    <main>
+    <section class="l-subMv">
+        <%- include('../project/_p-subMv',{
+        title:'training',
+        subtitle:'研修'
+        }) %>
+    </section>
+    <div class="l-breadcrumb">
+        <%- include('../project/_p-breadcrumb',{
+            page:'training'
+        }) %> 
+    </div>
+    <section class="l-content">
+        <%- include('../project/_p-content',{
+            bigText:'安心のサポート体制',
+            text:'枚岡交通なら、二種免許取得するための取得費用は会社からの支援制度があります。また、免許取得期間中も給与をお支払いするので、お金をもらいながら取得でき、安心してタクシーのお仕事をスタートしていただけます。'
+        }) %> 
+    </section>
+    <section class="l-period">
+        <%- include('../project/_p-period') %> 
+    </section>
+
+    
+    <div class="l-entry">
+        <%- include('../project/_p-entry') %>
+    </div>
+    </main>
+    <footer class="l-footer">
+    <%- include('../common/_p-footer2') %>
+    </footer>
+</body>
+
+</html>

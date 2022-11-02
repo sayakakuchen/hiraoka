@@ -1,0 +1,21 @@
+@use 'global' as *;
+
+.c-title2 {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: rem(23);
+    text-align: center;
+    line-height: calc(58/46);
+}
+
+.c-title2::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: rem(14);
+    background-color: $yellow;
+    left: 0;
+    bottom: rem(-3);
+    z-index: -1;
+}

@@ -1,0 +1,18 @@
+@use 'global' as *;
+
+.p-coming {
+    min-height: rem(250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-coming__inner {
+   
+}
+
+.p-coming__text {
+    font-size: rem(20);
+    font-family: $en-font;
+    text-align: center;
+}

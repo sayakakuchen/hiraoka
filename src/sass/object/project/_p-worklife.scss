@@ -1,0 +1,77 @@
+@use 'global' as *;
+
+.p-worklife {
+
+}
+
+.p-worklife__inner {
+
+}
+
+.p-worklife__subtitle {
+    width: rem(150);
+    height: rem(23);
+    margin: 0 auto;
+}
+
+.p-worklife__title {
+    margin-top: rem(14);
+}
+
+.p-worklife__text {
+    text-align: center;
+    font-size: rem(18);
+    font-weight: bold;
+    line-height: 2;
+    margin-top: rem(48);
+}
+
+.p-workelife__content {
+    margin-top: rem(75);
+}
+
+.p-worklife__figure {
+
+}
+
+.p-worklife__units {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: rem(15);
+    margin-top: rem(27);
+}
+
+.p-worklife__unit {
+    text-align: center;
+    font-size: rem(10);
+    font-weight: bold;
+    line-height: 1.5;
+    border-radius: rem(5);
+    border: rem(2) solid $black;
+    padding: rem(8) 0;
+}
+
+.p-worklife__img {
+    width: rem(120);
+    margin: 0 auto;
+    margin-top: rem(46);
+    animation: carMotion 5s linear infinite;
+}
+
+@keyframes carMotion {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    3% {
+        opacity: 1;
+    }
+    97% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    
+}

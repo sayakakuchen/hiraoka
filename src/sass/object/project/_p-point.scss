@@ -1,0 +1,43 @@
+@use 'global' as *;
+
+.p-point {
+    background-color: $yellow;
+    padding: rem(50) 0;
+}
+
+.p-point__inner.l-inner {
+    padding: rem(0) rem(34);
+}
+
+.p-point__items {
+    display: grid;
+    gap: rem(30);
+    @include mq(md) {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.p-point__item {
+    background-color: $white;
+    border-radius: rem(15);
+    padding: rem(15);
+}
+
+.p-point__item-title {
+    width: rem(100);
+    height: rem(20);
+    margin: 0 auto;
+}
+
+.p-point__item-img {
+    width: rem(140);
+    margin: 0 auto;
+    margin-top: rem(10);
+}
+
+.p-point__item-text {
+    font-size: rem(17);
+    font-weight: bold;
+    text-align: center;
+    margin-top: rem(25);
+}

@@ -1,0 +1,50 @@
+@use 'global' as *;
+
+.p-application {
+
+}
+
+.p-application__inner {
+
+}
+
+.p-application__title {
+    text-align: center;
+}
+
+.p-application__table {
+    margin-top: rem(30);
+}
+
+.p-application__table dl {
+    position: relative;
+    padding: rem(25) 0;
+}
+
+.p-application__table dl::before {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 1px;
+    margin-left: calc(50% - 50vw);
+    background-color: #adadad;
+    left: 0;
+    top: 0;
+}
+
+.p-application__table dt {
+    font-size: rem(14);
+    font-weight: bold;
+}
+
+.p-application__table dd {
+    font-size: rem(14);
+    margin-top: rem(24);
+    line-height: calc(42 / 28);
+    font-feature-settings: "palt";
+}
+
+.p-application__table dd strong {
+    display: inline-block;
+    margin-top: rem(22);
+}

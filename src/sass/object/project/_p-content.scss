@@ -1,0 +1,21 @@
+@use 'global' as *;
+
+.p-content {
+
+}
+
+.p-content__inner {
+
+}
+
+.p-content__bigText {
+    text-align: center;
+    font-size: rem(25);
+    font-weight: bold;
+}
+
+.p-content__text {
+    font-size: rem(13);
+    line-height: 2;
+    margin-top: rem(17);
+}

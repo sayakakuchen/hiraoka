@@ -1,0 +1,36 @@
+@use 'global' as *;
+
+.p-conceptTop {
+
+}
+
+.p-conceptTop__inner {
+
+}
+
+.p-conceptTop__title {
+    font-size: rem(44);
+    text-align: center;
+    line-height: calc(111/92);
+}
+
+.p-conceptTop__wrap {
+    display: grid;
+    gap: rem(48);
+    margin-top: rem(72);
+    @include mq(md) {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.p-conceptTop__text {
+    font-size: rem(15);
+    line-height: 3;
+    @include mq(md) {
+
+    }
+}
+
+.p-conceptTop__img {
+
+}

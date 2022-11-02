@@ -7,3 +7,10 @@
         margin-top: rem(200);
     }
 }
+
+.l-footer--none {
+    margin-top: 0;
+    @include mq(md) {
+        margin-top: 0;
+    }
+}

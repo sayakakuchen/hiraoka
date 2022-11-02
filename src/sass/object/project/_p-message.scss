@@ -1,0 +1,65 @@
+@use 'global' as *;
+
+.p-message {
+
+}
+
+.p-message__inner {
+
+}
+
+.p-message__bigText {
+    text-align: center;
+    font-size: rem(40);
+    line-height: 2;
+}
+
+.p-message__units {
+    display: grid;
+    gap: rem(47);
+    margin-top: rem(90);
+}
+
+.p-message__unit {
+    counter-increment: number;
+}
+
+.p-message__unit::before {
+    width: rem(42);
+    height: rem(42);
+    display: flex;
+    font-family: $din;
+    font-size: rem(30);
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    content: counter(number, decimal-leading-zero);
+    color: $black;
+    background-color: $yellow;
+    border-radius: rem(5);
+    margin: 0 auto;
+}
+
+.p-message__unit-text {
+    text-align: center;
+    font-size: rem(19);
+    font-weight: bold;
+    line-height: calc(80/38);
+    margin-top: rem(27);
+}
+
+.p-message__text {
+    font-size: rem(15);
+    line-height: 3;
+    margin-top: rem(50);
+}
+
+.p-message__text span {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+}
+
+.p-message__text strong {
+    font-size: rem(23);
+}
