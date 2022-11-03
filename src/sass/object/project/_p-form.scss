@@ -72,6 +72,10 @@
     margin-left: rem(10);
 
     @include mq(md) {
+        width: 24px;
+        height: 14px;
+    }
+    @include mq(lg) {
         width: rem(44);
         height: rem(20);
     }
