@@ -25,10 +25,17 @@
     line-height: 1.5;
     line-height: calc(42/26);
     margin-top: rem(5);
+    overflow: hidden;
 
     @include mq(md) {
         width: calc(100% - #{rem(145)});
         font-size: rem(20);
         margin-top: 0;
     }
+}
+
+.p-list__title p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }

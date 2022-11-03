@@ -52,7 +52,7 @@
 @keyframes conceptImg {
     0% {
         opacity: 0;
-        transform: translateX(-10%);
+        transform: translateX(20%);
     }
     10% {
         opacity: 1;
@@ -62,7 +62,7 @@
     }
     100% {
         opacity: 0;
-        transform: translateX(20%);
+        transform: translateX(-10%);
     } 
 }
 

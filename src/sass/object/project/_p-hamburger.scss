@@ -6,7 +6,7 @@
     height: 100%;
     border-radius: 50%;
     background-color: $black;
-    border: 3px solid $white;
+    border: rem(3) solid $white;
 }
 
 .p-hamburger.is-active {
