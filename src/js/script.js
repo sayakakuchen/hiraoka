@@ -135,16 +135,3 @@ window.onload = function() {
     });
   });
 };
-
-// 拡大縮小
-window.addEventListener('resize', function () {
-  var zoom_level = window.devicePixelRatio || window.screen.availWidth / document.documentElement.clientWidth;
-  document.documentElement.style.transform = 'scale(' + zoom_level + ')';
-  if (zoom_level >= 1) {
-    document.documentElement.style.transformOrigin = 'top left';
-  } else {
-    document.documentElement.style.transformOrigin = 'top center';
-    document.documentElement.style.height = zoom_level * 100 + '%';
-  }
-});
-
