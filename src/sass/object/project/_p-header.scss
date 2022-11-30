@@ -34,6 +34,9 @@
 }
 
 .p-header__logo {
+    position: relative;
+    pointer-events: visible;
+    z-index: 1;
     width: rem(214);
     @include mq(md) {
         width: rem(320);

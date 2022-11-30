@@ -2,6 +2,7 @@
 
 .c-btn {
   background-color: white;
+  color: $black;
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -51,5 +52,5 @@
 
 .c-btn--shadow {
   box-shadow: rem(3) rem(3) rem(3) rgba($color: #51514f, $alpha: 0.75);
-
 }
+

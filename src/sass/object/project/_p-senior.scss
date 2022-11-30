@@ -9,7 +9,6 @@
 }
 
 .p-senior__items {
-    display: grid;
     gap: rem(90);
 
     @include mq(md) {

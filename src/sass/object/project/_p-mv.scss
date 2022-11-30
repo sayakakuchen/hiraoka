@@ -85,11 +85,13 @@
     }
 }
 
-.p-mv__entryBtn {
+.c-big-entryBtn {
+    position: fixed;
     width: 37.33vw;
-    margin-left: rem(-16);
-    margin-right: calc(50% - #{rem(270)});
+    right: rem(20);
+    bottom: rem(20);
     animation: fuwafuwa 3s infinite linear .8s alternate;
+    z-index: 50;
     @include mq(md) {
         width: rem(330);
         margin-right: 0;
@@ -98,7 +100,7 @@
     }
 }
 
-.p-mv__entryBtn:hover {
+.c-big-entryBtn:hover {
     @include mq(md) {
         opacity: 0.9;
     }
@@ -152,6 +154,7 @@
 .p-mv__scroll span {
     display: inline-block;
     font-family: $en-font;
+    color: $black;
 
     @include mq(md) {
         font-size: rem(18);
